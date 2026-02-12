@@ -66,7 +66,7 @@ export default function TestimonialsPage() {
 
                     <div className="flex justify-center">
                         <Button asChild variant="outline" size="lg">
-                            <Link href="https://g.page/r/CXyvBfC6e8X6EBM/review" target="_blank">
+                            <Link href="https://share.google/K5W6G3kxexRKUmwnk" target="_blank">
                                 <i className="bi bi-google mr-2"></i> Ver todas as avaliações no Google
                             </Link>
                         </Button>

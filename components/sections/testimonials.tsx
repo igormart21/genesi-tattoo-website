@@ -37,6 +37,30 @@ const reviews = [
         stars: 5,
         date: "Há 2 meses",
     },
+    {
+        name: "Fernanda Lima",
+        text: "O curso online deles me ajudou muito a começar. A didática é ótima e agora sou cliente também!",
+        stars: 5,
+        date: "Há 3 meses",
+    },
+    {
+        name: "Lucas Santos",
+        text: "Ambiente muito vibe, música boa e arte de primeira. O tatuador teve muita paciência para criar o desenho comigo na hora.",
+        stars: 5,
+        date: "Há 4 meses",
+    },
+    {
+        name: "Marina Oliveira",
+        text: "Fiz uma cobertura (cover-up) e ficou perfeito, nem parece que tinha algo embaixo. Muito obrigada!",
+        stars: 5,
+        date: "Há 5 meses",
+    },
+    {
+        name: "Thiago Almeida",
+        text: "Preço justo pela qualidade entregue. Vale cada centavo. Voltarei em breve para fechar o braço.",
+        stars: 5,
+        date: "Há 6 meses",
+    },
 ];
 
 export function Testimonials() {
