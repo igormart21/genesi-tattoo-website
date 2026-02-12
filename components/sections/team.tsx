@@ -10,13 +10,13 @@ const team = [
     {
         id: "rafael",
         name: "Rafael Oliveira",
-        role: "Tatuador Senior & Especialista em Realismo", // Keeping this as per prompt reference, but bio says other styles. Let's trust the bio for details.
+        role: "CEO & Tatuador Senior • Especialista em Realismo",
         image: "/images/team/Bio-Rafael.webp",
-        bio: `Rafael Oliveira, tatuador profissional, são mais de 23 anos de experiência no mercado. Especialista nos estilos Aquarela, Colorido, Comics e Glitter, construiu uma carreira sólida e reconhecida nacionalmente.
+        bio: `Rafael Oliveira, CEO da Genesis e tatuador profissional, são mais de 23 anos de experiência no mercado. Especialista nos estilos Aquarela, Colorido, Comics e Glitter, construiu uma carreira sólida e reconhecida nacionalmente.
 
 Ao longo de sua trajetória, Rafael conquistou mais de 70 prêmios, incluindo 7 premiações na Tattoo Week, um dos maiores eventos de tatuagem do mundo.
 
-Com toda a vivência prática e conhecimento técnico acumulados ao longo dos anos, ministra workshop e mentorias presenciais além de atuara como jurado em convenções de tatuagem.`,
+Com toda a vivência prática e conhecimento técnico acumulados ao longo dos anos, ministra workshop e mentorias presenciais além de atuar como jurado em convenções de tatuagem.`,
         instagram: "https://www.instagram.com/genesistattooart",
         specialties: ["Aquarela", "Colorido", "Comics", "Glitter", "Realismo"]
     }
