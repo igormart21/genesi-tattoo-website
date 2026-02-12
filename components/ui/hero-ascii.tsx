@@ -30,56 +30,51 @@ export default function HeroAscii() {
         overflow: hidden !important;
       }
       
+      /* Mobile: No clip path or less aggressive */
       [data-us-project] canvas {
-        clip-path: inset(0 0 10% 0) !important;
+        clip-path: none !important;
+      }
+      
+      /* Desktop: Clip bottom */
+      @media (min-width: 1024px) {
+        [data-us-project] canvas {
+          clip-path: inset(0 0 10% 0) !important;
+        }
       }
       
       [data-us-project] * {
         pointer-events: none !important;
       }
+      /* Aggressive branding removal */
       [data-us-project] a[href*="unicorn"],
       [data-us-project] button[title*="unicorn"],
       [data-us-project] div[title*="Made with"],
       [data-us-project] .unicorn-brand,
       [data-us-project] [class*="brand"],
       [data-us-project] [class*="credit"],
-      [data-us-project] [class*="watermark"] {
-        display: none !important;
-        visibility: hidden !important;
+      [data-us-project] [class*="watermark"],
+      /* Mobile specific branding - CSS Only */
+      /* DO NOT USE :has() ON WRAPPER DIVS AS IT HIDES THE CANVAS TOO */
+      a[href*="unicorn.studio"],
+      .unicorn-embed-branding,
+      [class*="unicorn-studio"] {
+        visibility: hidden !important; 
         opacity: 0 !important;
-        position: absolute !important;
-        left: -9999px !important;
-        top: -9999px !important;
+        pointer-events: none !important;
+      }
+      
+      /* Target the specific branding link if it's a direct child, but be careful */
+      [data-us-project] > a[href*="unicorn.studio"] {
+        display: none !important;
       }
     `;
         document.head.appendChild(style);
 
-        // Function to aggressively hide branding
-        const hideBranding = () => {
-            const projectDiv = document.querySelector('[data-us-project]');
-            if (projectDiv) {
-                // Find and remove any elements containing branding text
-                const allElements = projectDiv.querySelectorAll('*');
-                allElements.forEach(el => {
-                    const text = (el.textContent || '').toLowerCase();
-                    if (text.includes('made with') || text.includes('unicorn')) {
-                        el.remove(); // Completely remove the element
-                    }
-                });
-            }
-        };
-
-        // Run immediately and periodically
-        hideBranding();
-        const interval = setInterval(hideBranding, 100);
-
-        // Also try after delays
-        setTimeout(hideBranding, 1000);
-        setTimeout(hideBranding, 3000);
-        setTimeout(hideBranding, 5000);
+        // CSS-only approach for branding removal to avoid accidentally killing the canvas
+        // The style block above handles the hiding of 'unicorn' links and 'made with' text
+        // safely by targeting attributes and classes without removing DOM nodes.
 
         return () => {
-            clearInterval(interval);
             document.head.removeChild(embedScript);
             document.head.removeChild(style);
         };
@@ -87,16 +82,16 @@ export default function HeroAscii() {
 
     return (
         <section className="relative min-h-screen overflow-hidden bg-black">
-            {/* Vitruvian man animation - hidden on mobile */}
-            <div className="absolute inset-0 w-full h-full hidden lg:block">
+            {/* Vitruvian man animation - Visible on all devices now */}
+            <div className="absolute inset-0 w-full h-full block">
                 <div
                     data-us-project="whwOGlfJ5Rz2rHaEUgHl"
                     style={{ width: '100%', height: '100%', minHeight: '100vh' }}
                 />
             </div>
 
-            {/* Mobile stars background */}
-            <div className="absolute inset-0 w-full h-full lg:hidden stars-bg"></div>
+            {/* Stars background - Always consistent */}
+            <div className="absolute inset-0 w-full h-full stars-bg opacity-30 pointer-events-none"></div>
 
             {/* Top Header Information */}
             <div className="absolute top-20 left-0 right-0 z-20">
@@ -136,9 +131,9 @@ export default function HeroAscii() {
                         {/* Title with dithered accent */}
                         <div className="relative">
                             <div className="hidden lg:block absolute -left-3 top-0 bottom-0 w-1 dither-pattern opacity-40"></div>
-                            <h1 className="text-3xl lg:text-5xl font-bold text-white mb-3 lg:mb-4 leading-tight font-serif tracking-wide" style={{ letterSpacing: '0.05em' }}>
+                            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-4 leading-[0.9] font-serif tracking-wide" style={{ letterSpacing: '0.05em' }}>
                                 ARTE NA
-                                <span className="block text-primary mt-1 lg:mt-2 opacity-90">
+                                <span className="block text-primary mt-2 opacity-90">
                                     PELE.
                                 </span>
                             </h1>
@@ -154,7 +149,7 @@ export default function HeroAscii() {
                         {/* Description with subtle grid pattern */}
                         <div className="relative">
                             <p className="text-xs lg:text-base text-gray-300 mb-5 lg:mb-6 leading-relaxed font-sans font-light opacity-80 max-w-md">
-                                Onde a geometria encontra a humanidade — Transformando histórias em obras de arte atemporais em Moema.
+                                Onde a geometria encontra a humanidade — Transformando histórias em obras de arte únicas e atemporais.
                             </p>
 
                             {/* Technical corner accent - desktop only */}
@@ -197,8 +192,8 @@ export default function HeroAscii() {
                         <span className="hidden lg:inline">SYSTEM.ACTIVE</span>
                         <span className="lg:hidden">VINTAGE.MOD</span>
                         <div className="hidden lg:flex gap-1">
-                            {Array.from({ length: 8 }).map((_, i) => (
-                                <div key={i} className="w-1 h-3 bg-primary/30" style={{ height: `${Math.random() * 12 + 4}px` }}></div>
+                            {[12, 8, 16, 6, 10, 14, 7, 9].map((height, i) => (
+                                <div key={i} className="w-1 h-3 bg-primary/30" style={{ height: `${height}px` }}></div>
                             ))}
                         </div>
                         <span>V2.0.0</span>
@@ -239,6 +234,6 @@ export default function HeroAscii() {
           opacity: 0.3;
         }
       `}</style>
-        </section>
+        </section >
     );
 }

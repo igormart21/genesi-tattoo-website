@@ -12,7 +12,7 @@ export function About() {
             <div className="container mx-auto px-4 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     {/* Image Side */}
-                    <div className="relative order-2 lg:order-1 group">
+                    <div className="relative order-2 lg:order-1 group max-w-xl mx-auto lg:mx-0">
                         {/* Technical Corners */}
                         <div className="absolute -top-2 -left-2 w-8 h-8 border-t-2 border-l-2 border-primary/30 z-20 group-hover:border-primary transition-colors duration-500"></div>
                         <div className="absolute -bottom-2 -right-2 w-8 h-8 border-b-2 border-r-2 border-primary/30 z-20 group-hover:border-primary transition-colors duration-500"></div>
@@ -20,7 +20,7 @@ export function About() {
                         <div className="relative aspect-[3/4] overflow-hidden border border-white/5 shadow-2xl">
                             <div
                                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1560707303-4e98035872dc?q=80&w=1932&auto=format&fit=crop')" }}
+                                style={{ backgroundImage: "url('/images/IMG_8990-2048x1365-1.jpg.webp')" }}
                             ></div>
                             <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500"></div>
 
@@ -37,7 +37,7 @@ export function About() {
                     </div>
 
                     {/* Text Side */}
-                    <div className="space-y-8 order-1 lg:order-2">
+                    <div className="space-y-8 order-1 lg:order-2 relative z-20">
                         <div className="space-y-2">
                             <div className="flex items-center gap-2 mb-4">
                                 <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>

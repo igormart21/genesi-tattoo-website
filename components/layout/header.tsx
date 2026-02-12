@@ -118,8 +118,8 @@ export function Header() {
                                 <i className="bi bi-list text-2xl"></i>
                             </Button>
                         </SheetTrigger>
-                        <SheetContent side="right" className="bg-background/95 backdrop-blur-xl border-l-border">
-                            <div className="flex flex-col h-full pt-10">
+                        <SheetContent side="right" className="bg-background/95 backdrop-blur-xl border-l-border w-[80vw] max-w-[300px]">
+                            <div className="flex flex-col h-full pt-16">
                                 <nav className="flex flex-col gap-6 items-center">
                                     {links.map((link) => (
                                         <Link
@@ -127,7 +127,7 @@ export function Header() {
                                             href={link.href}
                                             onClick={() => setIsOpen(false)}
                                             className={cn(
-                                                "text-xl font-serif font-medium transition-colors hover:text-primary",
+                                                "text-lg font-serif font-medium transition-colors hover:text-primary",
                                                 pathname === link.href ? "text-primary" : "text-muted-foreground"
                                             )}
                                         >

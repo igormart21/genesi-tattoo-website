@@ -22,12 +22,12 @@ const portfolioItems = [1, 2, 3, 4, 5, 6].map((i) => ({
 // Unsplash source is deprecated, so I'll use a direct reliable placeholder service or static Unsplash IDs.
 // I will use fixed URLs for reliability.
 const fixedPortfolio = [
-    { id: 1, src: "https://images.unsplash.com/photo-1598371839696-5c5bbce65074?q=80&w=800", style: "Realismo", title: "Lobo Realista" },
-    { id: 2, src: "https://images.unsplash.com/photo-1611501275019-9b5cda994e11?q=80&w=800", style: "Fine Line", title: "Floral Delicado" },
-    { id: 3, src: "https://images.unsplash.com/photo-1590246294326-003884cb954a?q=80&w=800", style: "Old School", title: "Adaga Tradicional" },
-    { id: 4, src: "https://images.unsplash.com/photo-1562962245-e2dca1c045b4?q=80&w=800", style: "Potrait", title: "Retrato Sombreado" },
-    { id: 5, src: "https://images.unsplash.com/photo-1542281286-9e0a56eafefe?q=80&w=800", style: "Minimalista", title: "Geometria" },
-    { id: 6, src: "https://images.unsplash.com/photo-1560707303-4e98035872dc?q=80&w=800", style: "Blackwork", title: "Fechamento de Braço" },
+    { id: 1, src: "/images/comics/05.jpg", style: "Comics", title: "Full Color Anime" },
+    { id: 2, src: "/images/2026-02-06 08_41_13.070-0300.jpg", style: "Aquarela", title: "Aquarela Autoral" },
+    { id: 3, src: "/images/comics/14.jpg", style: "Comics", title: "Geek / Comics" },
+    { id: 4, src: "/images/IMG-20231024-WA0039.jpg", style: "Aquarela", title: "Floral Aquarelado" },
+    { id: 5, src: "/images/comics/08.jpg", style: "Comics", title: "Personagem Geek" },
+    { id: 6, src: "/images/20250723_174957.jpg", style: "Aquarela", title: "Arte Fluida" },
 ];
 
 export function FeaturedPortfolio() {
@@ -88,7 +88,7 @@ export function FeaturedPortfolio() {
                             </DialogTrigger>
                             <DialogContent className="max-w-4xl bg-background/95 backdrop-blur-xl border-white/10 p-0 overflow-hidden">
                                 <div className="grid grid-cols-1 md:grid-cols-2">
-                                    <div className="relative aspect-square md:aspect-auto h-full min-h-[400px]">
+                                    <div className="relative aspect-square md:aspect-auto h-full min-h-[300px] md:min-h-[400px]">
                                         <Image
                                             src={item.src}
                                             alt={item.title}
