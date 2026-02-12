@@ -10,11 +10,15 @@ const team = [
     {
         id: "rafael",
         name: "Rafael Oliveira",
-        role: "Tatuador Senior & Especialista em Realismo",
+        role: "Tatuador Senior & Especialista em Realismo", // Keeping this as per prompt reference, but bio says other styles. Let's trust the bio for details.
         image: "/images/team/Bio-Rafael.webp",
-        bio: "Com anos de experiência e um olhar apurado para detalhes, Rafael transforma histórias em arte viva na pele. Especialista em realismo e sombreamento, suas obras capturam a essência e a profundidade de cada referência.",
-        instagram: "https://www.instagram.com/genesistattooart", // Placeholder if specific one not provided
-        specialties: ["Realismo", "Blackwork", "Portrait"]
+        bio: `Rafael Oliveira, tatuador profissional, são mais de 23 anos de experiência no mercado. Especialista nos estilos Aquarela, Colorido, Comics e Glitter, construiu uma carreira sólida e reconhecida nacionalmente.
+
+Ao longo de sua trajetória, Rafael conquistou mais de 70 prêmios, incluindo 7 premiações na Tattoo Week, um dos maiores eventos de tatuagem do mundo.
+
+Com toda a vivência prática e conhecimento técnico acumulados ao longo dos anos, ministra workshop e mentorias presenciais além de atuara como jurado em convenções de tatuagem.`,
+        instagram: "https://www.instagram.com/genesistattooart",
+        specialties: ["Aquarela", "Colorido", "Comics", "Glitter", "Realismo"]
     }
 ];
 
@@ -41,7 +45,7 @@ export function Team() {
 
                     <div className="relative inline-block">
                         <h2 className="text-3xl md:text-5xl font-serif font-bold text-white tracking-widest relative z-10">
-                            GENESIS <span className="text-primary italic">ARTISTAS</span>
+                            GENESIS <span className="text-primary italic">ARTISTA</span>
                         </h2>
                         <div className="absolute -inset-2 bg-primary/5 blur-xl -z-10 rounded-full"></div>
                     </div>
@@ -52,23 +56,24 @@ export function Team() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+                <div className="flex justify-center">
                     {team.map((member) => (
-                        <div key={member.id} className="group relative">
+                        <div key={member.id} className="group relative w-full max-w-4xl">
                             {/* Card Border / Technical Frame */}
                             <div className="absolute -inset-px border border-white/10 z-0"></div>
                             <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-primary/50 transition-all duration-300 group-hover:w-full group-hover:h-full group-hover:border-primary/20 pointer-events-none"></div>
 
                             <Card className="relative bg-transparent border-0 overflow-hidden h-full rounded-none">
-                                <CardContent className="p-0 flex flex-col h-full">
-                                    <div className="relative aspect-[3/4] overflow-hidden border-b border-white/5">
+                                <CardContent className="p-0 flex flex-col md:flex-row h-full">
+                                    {/* Image Section - Left on desktop */}
+                                    <div className="relative aspect-[3/4] md:aspect-[3/4] md:w-2/5 overflow-hidden border-b md:border-b-0 md:border-r border-white/5">
                                         <Image
                                             src={member.image}
                                             alt={member.name}
                                             fill
                                             className="object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
                                         />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90 md:opacity-60"></div>
 
                                         {/* Technical Overlay on Image */}
                                         <div className="absolute top-2 right-2 flex flex-col items-end gap-1">
@@ -76,33 +81,39 @@ export function Team() {
                                             <div className="w-8 h-px bg-primary/40"></div>
                                         </div>
 
-                                        <div className="absolute bottom-0 left-0 w-full p-6">
+                                        <div className="absolute bottom-0 left-0 w-full p-6 md:hidden">
                                             <h3 className="text-2xl font-serif font-bold text-white mb-1 tracking-wider">{member.name}</h3>
                                             <p className="text-primary font-mono text-xs tracking-widest uppercase">{member.role}</p>
                                         </div>
                                     </div>
 
-                                    <div className="p-6 flex flex-col flex-grow space-y-6 bg-black/50 backdrop-blur-sm">
-                                        <div className="flex items-start gap-2">
-                                            <span className="text-primary text-xs font-mono mt-1">{">"}</span>
-                                            <p className="text-gray-400 text-sm leading-relaxed font-light">
-                                                {member.bio}
-                                            </p>
+                                    {/* Text Section - Right on desktop */}
+                                    <div className="p-6 md:p-10 flex flex-col flex-grow space-y-6 bg-black/50 backdrop-blur-sm md:w-3/5 justify-center">
+                                        <div className="hidden md:block mb-2">
+                                            <h3 className="text-3xl lg:text-4xl font-serif font-bold text-white mb-2 tracking-wider">{member.name}</h3>
+                                            <p className="text-primary font-mono text-sm tracking-widest uppercase">{member.role}</p>
                                         </div>
 
-                                        <div className="space-y-3">
+                                        <div className="flex items-start gap-3">
+                                            <span className="text-primary text-xs font-mono mt-1">{">"}</span>
+                                            <div className="text-gray-400 text-sm md:text-base leading-relaxed font-light whitespace-pre-line space-y-4">
+                                                {member.bio}
+                                            </div>
+                                        </div>
+
+                                        <div className="space-y-4 pt-4">
                                             <div className="text-[10px] uppercase tracking-widest text-white/30 font-mono">Specialties_Loader</div>
                                             <div className="flex flex-wrap gap-2">
                                                 {member.specialties.map(spec => (
-                                                    <Badge key={spec} variant="outline" className="border-white/10 text-white/70 hover:border-primary/50 hover:text-primary transition-colors text-[10px] uppercase tracking-wide rounded-none font-mono">
+                                                    <Badge key={spec} variant="outline" className="border-white/10 text-white/70 hover:border-primary/50 hover:text-primary transition-colors text-[10px] md:text-xs uppercase tracking-wide rounded-none font-mono py-1 px-3">
                                                         {spec}
                                                     </Badge>
                                                 ))}
                                             </div>
                                         </div>
 
-                                        <div className="pt-4 mt-auto w-full space-y-3">
-                                            <Button asChild className="w-full bg-primary/10 text-primary border border-primary/40 hover:bg-primary hover:text-black rounded-none uppercase font-mono text-xs tracking-widest transition-all group/btn h-10 relative overflow-hidden">
+                                        <div className="pt-8 mt-auto w-full space-y-3 md:max-w-md">
+                                            <Button asChild className="w-full bg-primary/10 text-primary border border-primary/40 hover:bg-primary hover:text-black rounded-none uppercase font-mono text-xs tracking-widest transition-all group/btn h-12 relative overflow-hidden">
                                                 <Link
                                                     href={`https://wa.me/5511951321091?text=${encodeURIComponent(`Olá! Gostaria de agendar um horário com o tatuador ${member.name}.`)}`}
                                                     target="_blank"
@@ -115,7 +126,7 @@ export function Team() {
                                                 </Link>
                                             </Button>
 
-                                            <Button asChild variant="ghost" className="w-full text-white/30 hover:text-white hover:bg-white/5 rounded-none uppercase font-mono text-[10px] tracking-widest transition-all h-6 hover:tracking-[0.2em] duration-300">
+                                            <Button asChild variant="ghost" className="w-full text-white/30 hover:text-white hover:bg-white/5 rounded-none uppercase font-mono text-[10px] tracking-widest transition-all h-8 hover:tracking-[0.2em] duration-300">
                                                 <Link href={member.instagram} target="_blank">
                                                     <span>[ VER_PORTFÓLIO ]</span>
                                                 </Link>
