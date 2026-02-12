@@ -10,6 +10,8 @@ import { Testimonials } from "@/components/sections/testimonials";
 import { CourseCTA } from "@/components/sections/course-cta";
 import { Location } from "@/components/sections/location";
 import { CallToAction } from "@/components/sections/cta";
+import { Studio } from "@/components/sections/studio";
+import { Awards } from "@/components/sections/awards";
 
 export default function Home() {
   return (
@@ -20,7 +22,9 @@ export default function Home() {
       <Styles />
       <FeaturedPortfolio />
       <Team />
+      <Studio />
       <HowItWorks />
+      <Awards />
       <Testimonials />
       <CourseCTA />
       <Location />
