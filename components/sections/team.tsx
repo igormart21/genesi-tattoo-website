@@ -58,7 +58,7 @@ export function Team() {
 
                 <div className="flex justify-center">
                     {team.map((member) => (
-                        <div key={member.id} className="group relative w-full max-w-4xl">
+                        <div key={member.id} className="group relative w-full max-w-5xl">
                             {/* Card Border / Technical Frame */}
                             <div className="absolute -inset-px border border-white/10 z-0"></div>
                             <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-primary/50 transition-all duration-300 group-hover:w-full group-hover:h-full group-hover:border-primary/20 pointer-events-none"></div>
@@ -66,7 +66,7 @@ export function Team() {
                             <Card className="relative bg-transparent border-0 overflow-hidden h-full rounded-none">
                                 <CardContent className="p-0 flex flex-col md:flex-row h-full">
                                     {/* Image Section - Left on desktop */}
-                                    <div className="relative aspect-[3/4] md:aspect-[3/4] md:w-2/5 overflow-hidden border-b md:border-b-0 md:border-r border-white/5">
+                                    <div className="relative aspect-[3/4] md:aspect-auto md:w-1/2 overflow-hidden border-b md:border-b-0 md:border-r border-white/5">
                                         <Image
                                             src={member.image}
                                             alt={member.name}
@@ -88,7 +88,7 @@ export function Team() {
                                     </div>
 
                                     {/* Text Section - Right on desktop */}
-                                    <div className="p-6 md:p-10 flex flex-col flex-grow space-y-6 bg-black/50 backdrop-blur-sm md:w-3/5 justify-center">
+                                    <div className="p-6 md:p-10 flex flex-col flex-grow space-y-6 bg-black/50 backdrop-blur-sm md:w-1/2 justify-center">
                                         <div className="hidden md:block mb-2">
                                             <h3 className="text-3xl lg:text-4xl font-serif font-bold text-white mb-2 tracking-wider">{member.name}</h3>
                                             <p className="text-primary font-mono text-sm tracking-widest uppercase">{member.role}</p>
