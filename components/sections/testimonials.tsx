@@ -110,7 +110,7 @@ export function Testimonials() {
                 </Carousel>
 
                 <div className="pt-8 flex justify-center">
-                    <Link href="https://g.page/r/CXyvBfC6e8X6EBM/review" target="_blank">
+                    <Link href="https://share.google/K5W6G3kxexRKUmwnk" target="_blank">
                         <Button variant="outline" className="gap-2">
                             <i className="bi bi-google"></i>
                             Avaliar no Google
