@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import {
     Carousel,
     CarouselContent,
@@ -83,9 +85,16 @@ export function Testimonials() {
                     <CarouselNext className="hidden md:flex -right-12 border-white/10 hover:bg-primary hover:text-primary-foreground hover:border-primary" />
                 </Carousel>
 
-                <div className="pt-8">
+                <div className="pt-8 flex justify-center">
+                    <Link href="https://g.page/r/CXyvBfC6e8X6EBM/review" target="_blank">
+                        <Button variant="outline" className="gap-2">
+                            <i className="bi bi-google"></i>
+                            Avaliar no Google
+                        </Button>
+                    </Link>
+                </div>
+                <div className="pt-2">
                     <p className="text-muted-foreground text-sm flex items-center justify-center gap-2">
-                        <i className="bi bi-google"></i>
                         Média <strong>5.0</strong> de 5 baseada em avaliações no Google
                     </p>
                 </div>
