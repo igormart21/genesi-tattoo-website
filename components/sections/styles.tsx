@@ -15,30 +15,7 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 
 const styles = [
-    {
-        id: "fineline",
-        label: "Fine Line",
-        description: "Traços finos, delicados e elegantes. Perfeito para escritas, botânicas e artes minimalistas.",
-        image: "https://images.unsplash.com/photo-1611501275019-9b5cda994e11?q=80&w=2070&auto=format&fit=crop",
-    },
-    {
-        id: "blackwork",
-        label: "Blackwork",
-        description: "Impacto visual com tinta preta sólida. Geometria, pontilhismo e ilustrações marcantes.",
-        image: "https://images.unsplash.com/photo-1590246294326-003884cb954a?q=80&w=1974&auto=format&fit=crop",
-    },
-    {
-        id: "oldschool",
-        label: "Old School",
-        description: "O clássico que nunca morre. Linhas grossas, cores sólidas e iconografia tradicional.",
-        image: "https://images.unsplash.com/photo-1590246294326-003884cb954a?q=80&w=1974&auto=format&fit=crop", // Placeholder image
-    },
-    {
-        id: "realismo",
-        label: "Realismo",
-        description: "Técnica focada na reprodução fiel de fotografias, retratos e texturas naturais.",
-        image: "https://images.unsplash.com/photo-1562962245-e2dca1c045b4?q=80&w=1976&auto=format&fit=crop",
-    },
+
     {
         id: "aquarela",
         label: "Aquarela",
@@ -107,6 +84,36 @@ const styles = [
             "/images/glitter/glitter-17.jpg",
             "/images/glitter/glitter-18.jpg"
         ]
+    },
+    {
+        id: "pet",
+        label: "Pet",
+        description: "Homenageie seu melhor amigo com um retrato fiel ou uma arte estilizada.",
+        image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=2688&auto=format&fit=crop",
+    },
+    {
+        id: "preto-branco",
+        label: "Preto e Branco",
+        description: "Elegância e contraste em composições monocromáticas atemporais.",
+        image: "https://images.unsplash.com/photo-1590246294326-003884cb954a?q=80&w=1974&auto=format&fit=crop",
+    },
+    {
+        id: "delicadas",
+        label: "Delicadas",
+        description: "Traços finos e sutis que realçam a beleza natural com leveza.",
+        image: "https://images.unsplash.com/photo-1611501275019-9b5cda994e11?q=80&w=2070&auto=format&fit=crop",
+    },
+    {
+        id: "cobertura",
+        label: "Cobertura de Cicatriz",
+        description: "Transforme marcas em arte com projetos especializados para cobertura.",
+        image: "https://images.unsplash.com/photo-1562962245-e2dca1c045b4?q=80&w=1976&auto=format&fit=crop",
+    },
+    {
+        id: "coverup",
+        label: "Cover Up",
+        description: "Renove ou cubra tatuagens antigas com uma nova arte exclusiva.",
+        image: "https://images.unsplash.com/photo-1606709772863-78c633a682ac?q=80&w=2670&auto=format&fit=crop",
     }
 ];
 
@@ -127,7 +134,7 @@ export function Styles() {
                             <TabsTrigger
                                 key={style.id}
                                 value={style.id}
-                                className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground font-medium py-3 px-6 rounded-none min-w-[120px] transition-all duration-300"
+                                className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground font-medium py-3 px-6 rounded-none w-auto flex-none whitespace-nowrap transition-all duration-300"
                             >
                                 {style.label}
                             </TabsTrigger>

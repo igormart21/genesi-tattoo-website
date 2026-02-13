@@ -12,7 +12,8 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
 // Enhanced dummy data
-const categories = ["Todos", "Aquarela", "Comics", "Glitter", "Fine Line", "Blackwork", "Old School", "Realismo"];
+// Enhanced dummy data
+const categories = ["Todos", "Aquarela", "Comics", "Glitter", "Pet", "Preto e branco", "Delicadas", "Cobertura de cicatriz", "Cover up"];
 
 const aquarelaFiles = [
     "2026-02-06 08_41_13.070-0300.jpg",
@@ -107,20 +108,33 @@ const glitterItems = glitterFiles.map((file, i) => ({
     description: "Técnica que simula o efeito de brilho e glitter, trazendo um toque mágico e único para a tatuagem."
 }));
 
-// Placeholder items for other categories
-const otherItems = Array.from({ length: 8 }).map((_, i) => ({
-    id: i + 1,
-    image: `https://source.unsplash.com/random/800x800?tattoo,ink&sig=${i + 10}`, // Placeholder
-    // Using reliable sources
-    src: i % 2 === 0
-        ? "https://images.unsplash.com/photo-1598371839696-5c5bbce65074?q=80&w=800"
-        : "https://images.unsplash.com/photo-1611501275019-9b5cda994e11?q=80&w=800",
-    title: `Projeto Autoral #${i + 1}`,
-    category: i % 4 === 0 ? "Fine Line" : i % 3 === 0 ? "Blackwork" : i % 2 === 0 ? "Old School" : "Realismo",
-    description: "Arte desenvolvida exclusivamente para o cliente com base em referências de natureza e geometria sagrada."
-}));
+// Placeholder items for new categories
+const generatePlaceholders = (category: string, count: number, startId: number) =>
+    Array.from({ length: count }).map((_, i) => ({
+        id: `ph-${startId + i}`,
+        title: `${category} #${i + 1}`,
+        category: category,
+        src: `https://source.unsplash.com/random/800x800?tattoo,${category.replace(/ /g, ',')}&sig=${startId + i}`,
+        image: `https://source.unsplash.com/random/800x800?tattoo,${category.replace(/ /g, ',')}&sig=${startId + i}`,
+        description: `Arte exclusiva na categoria ${category}.`
+    }));
 
-const portfolioItems = [...aquarelaItems, ...comicsItems, ...glitterItems, ...otherItems];
+const petItems = generatePlaceholders("Pet", 3, 100);
+const pretoBrancoItems = generatePlaceholders("Preto e branco", 3, 200);
+const delicadasItems = generatePlaceholders("Delicadas", 3, 300);
+const coberturaItems = generatePlaceholders("Cobertura de cicatriz", 3, 400);
+const coverUpItems = generatePlaceholders("Cover up", 3, 500);
+
+const portfolioItems = [
+    ...aquarelaItems,
+    ...comicsItems,
+    ...glitterItems,
+    ...petItems,
+    ...pretoBrancoItems,
+    ...delicadasItems,
+    ...coberturaItems,
+    ...coverUpItems
+];
 
 export default function PortfolioPage() {
     const [filter, setFilter] = useState("Todos");
@@ -155,7 +169,7 @@ export default function PortfolioPage() {
                                     <TabsTrigger
                                         key={cat}
                                         value={cat}
-                                        className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border border-white/10 rounded-full px-6 py-2"
+                                        className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border border-white/10 rounded-full px-6 py-2 w-auto flex-none whitespace-nowrap"
                                     >
                                         {cat}
                                     </TabsTrigger>

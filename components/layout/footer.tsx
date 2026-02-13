@@ -20,7 +20,7 @@ export function Footer() {
                             <h3 className="font-serif text-3xl font-bold text-foreground tracking-wider italic">
                                 GÊNESIS.
                             </h3>
-                            <div className="text-[10px] font-mono text-primary/60 mt-1 tracking-widest">EST. 2024 • MOEMA SP</div>
+                            <div className="text-[10px] font-mono text-primary/60 mt-1 tracking-widest">EST. 2026 • MOEMA SP</div>
                         </div>
 
                         <p className="text-muted-foreground text-sm leading-relaxed max-w-xs font-light border-l border-primary/20 pl-4">
@@ -111,9 +111,12 @@ export function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center">
-                    <p className="text-[10px] font-mono text-muted-foreground text-center md:text-left tracking-wider uppercase">
-                        ALL RIGHTS RESERVED • GÊNESIS TATTOO ART
-                    </p>
+                    <div className="text-[10px] font-mono text-muted-foreground text-center md:text-left tracking-wider uppercase">
+                        <p>ALL RIGHTS RESERVED • GÊNESIS TATTOO ART</p>
+                        <p className="mt-1 flex items-center justify-center md:justify-start gap-1">
+                            Produzido com <span className="text-yellow-500 text-sm">♥</span> por <Link href="https://camaly.com.br" target="_blank" className="hover:text-primary transition-colors">Camaly</Link>
+                        </p>
+                    </div>
                     <div className="flex gap-6 mt-4 md:mt-0 text-[10px] font-mono text-muted-foreground tracking-wider uppercase">
                         <Link href="/politicas" className="hover:text-primary transition-colors">Políticas</Link>
                         <Link href="/termos" className="hover:text-primary transition-colors">Termos</Link>
