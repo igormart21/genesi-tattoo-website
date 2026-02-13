@@ -149,7 +149,7 @@ export default function HeroAscii() {
                         {/* Description with subtle grid pattern */}
                         <div className="relative">
                             <p className="text-xs lg:text-base text-gray-300 mb-5 lg:mb-6 leading-relaxed font-sans font-light opacity-80 max-w-md">
-                                Onde a geometria encontra a humanidade — Transformando histórias em obras de arte únicas e atemporais.
+                                Quando a experiência é única, o valor é percebido em cada detalhe.
                             </p>
 
                             {/* Technical corner accent - desktop only */}
