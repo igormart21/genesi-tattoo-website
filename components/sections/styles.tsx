@@ -45,6 +45,8 @@ const styles = [
         description: "Cores vibrantes e fluidas, imitando a técnica de pintura em aquarela com manchas e transições suaves.",
         image: "https://images.unsplash.com/photo-1598371839696-5c5bb6eb4327?q=80&w=2070&auto=format&fit=crop",
         gallery: [
+            "/images/aquarela-1.jpg",
+            "/images/aquarela-renata.jpg",
             "/images/2026-02-06 08_41_13.070-0300.jpg",
             "/images/20240714_223219.jpg",
             "/images/20241117_191445.jpg",
@@ -78,6 +80,32 @@ const styles = [
             "/images/comics/17.jpg",
             "/images/comics/19.jpg",
             "/images/comics/20.jpg"
+        ]
+    },
+    {
+        id: "glitter",
+        label: "Glitter",
+        description: "Técnica que simula o efeito de brilho e glitter, trazendo um toque mágico e único para a tatuagem.",
+        image: "https://images.unsplash.com/photo-1531168551408-5dc2c3771804?q=80&w=1974&auto=format&fit=crop", // Placeholder
+        gallery: [
+            "/images/glitter/glitter-1.jpg",
+            "/images/glitter/glitter-2.jpg",
+            "/images/glitter/glitter-3.jpg",
+            "/images/glitter/glitter-4.jpg",
+            "/images/glitter/glitter-5.jpg",
+            "/images/glitter/glitter-6.jpg",
+            "/images/glitter/glitter-7.jpg",
+            "/images/glitter/glitter-8.jpg",
+            "/images/glitter/glitter-9.jpg",
+            "/images/glitter/glitter-10.jpg",
+            "/images/glitter/glitter-11.jpg",
+            "/images/glitter/glitter-12.jpg",
+            "/images/glitter/glitter-13.jpg",
+            "/images/glitter/glitter-14.jpg",
+            "/images/glitter/glitter-15.jpg",
+            "/images/glitter/glitter-16.jpg",
+            "/images/glitter/glitter-17.jpg",
+            "/images/glitter/glitter-18.jpg"
         ]
     }
 ];

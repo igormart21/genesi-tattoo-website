@@ -12,7 +12,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
 // Enhanced dummy data
-const categories = ["Todos", "Aquarela", "Comics", "Fine Line", "Blackwork", "Old School", "Realismo"];
+const categories = ["Todos", "Aquarela", "Comics", "Glitter", "Fine Line", "Blackwork", "Old School", "Realismo"];
 
 const aquarelaFiles = [
     "2026-02-06 08_41_13.070-0300.jpg",
@@ -59,6 +59,27 @@ const comicsFiles = [
     "20.jpg"
 ];
 
+const glitterFiles = [
+    "glitter-1.jpg",
+    "glitter-2.jpg",
+    "glitter-3.jpg",
+    "glitter-4.jpg",
+    "glitter-5.jpg",
+    "glitter-6.jpg",
+    "glitter-7.jpg",
+    "glitter-8.jpg",
+    "glitter-9.jpg",
+    "glitter-10.jpg",
+    "glitter-11.jpg",
+    "glitter-12.jpg",
+    "glitter-13.jpg",
+    "glitter-14.jpg",
+    "glitter-15.jpg",
+    "glitter-16.jpg",
+    "glitter-17.jpg",
+    "glitter-18.jpg"
+];
+
 const aquarelaItems = aquarelaFiles.map((file, i) => ({
     id: `aq-${i}`,
     title: `Aquarela Autoral #${i + 1}`,
@@ -77,6 +98,15 @@ const comicsItems = comicsFiles.map((file, i) => ({
     description: "Arte inspirada no universo geek, animes e quadrinhos, com cores vivas e traços fiéis."
 }));
 
+const glitterItems = glitterFiles.map((file, i) => ({
+    id: `gl-${i}`,
+    title: `Glitter Tattoo #${i + 1}`,
+    category: "Glitter",
+    src: `/images/glitter/${file}`,
+    image: `/images/glitter/${file}`,
+    description: "Técnica que simula o efeito de brilho e glitter, trazendo um toque mágico e único para a tatuagem."
+}));
+
 // Placeholder items for other categories
 const otherItems = Array.from({ length: 8 }).map((_, i) => ({
     id: i + 1,
@@ -90,7 +120,7 @@ const otherItems = Array.from({ length: 8 }).map((_, i) => ({
     description: "Arte desenvolvida exclusivamente para o cliente com base em referências de natureza e geometria sagrada."
 }));
 
-const portfolioItems = [...aquarelaItems, ...comicsItems, ...otherItems];
+const portfolioItems = [...aquarelaItems, ...comicsItems, ...glitterItems, ...otherItems];
 
 export default function PortfolioPage() {
     const [filter, setFilter] = useState("Todos");

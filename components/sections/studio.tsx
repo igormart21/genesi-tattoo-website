@@ -13,6 +13,7 @@ const images = [
     "/images/studio/20260210_193758.jpg",
     "/images/studio/20260210_193923.jpg",
     "/images/studio/20260210_194420.jpg",
+    "/images/studio/20260210_164313.jpg",
 ];
 
 export function Studio() {
