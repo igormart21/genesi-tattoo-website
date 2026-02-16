@@ -73,6 +73,10 @@ export default function ContactPage() {
                                             Sábado: 10h às 18h
                                         </span>
                                     </p>
+                                    <p className="flex items-center gap-4 text-primary font-medium">
+                                        <i className="bi bi-calendar-check text-xl"></i>
+                                        <span>Atendimento somente com agendamento prévio.</span>
+                                    </p>
                                     <p className="flex items-center gap-4">
                                         <i className="bi bi-whatsapp text-primary text-xl"></i>
                                         <span>(11) 95132-1091</span>

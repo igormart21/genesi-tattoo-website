@@ -23,6 +23,10 @@ export function Location() {
                                     Sábado: 10h às 18h
                                 </span>
                             </p>
+                            <p className="flex items-center gap-4 text-primary font-medium">
+                                <i className="bi bi-calendar-check text-2xl"></i>
+                                <span>Atendimento somente com agendamento prévio.</span>
+                            </p>
                         </div>
 
                         <div className="flex gap-4 pt-4">
