@@ -265,11 +265,7 @@ export default function PortfolioPage() {
                                             </DialogHeader>
 
                                             <div className="space-y-6 pt-2">
-                                                <div className="grid grid-cols-2 gap-3">
-                                                    <div className="p-3 rounded border border-white/10 bg-white/5">
-                                                        <div className="text-[10px] uppercase tracking-widest text-muted-foreground mb-1">Tempo de sessão</div>
-                                                        <div className="font-medium text-sm text-foreground">Aprox. 4 horas</div>
-                                                    </div>
+                                                <div className="grid grid-cols-1 gap-3">
                                                     <div className="p-3 rounded border border-white/10 bg-white/5">
                                                         <div className="text-[10px] uppercase tracking-widest text-muted-foreground mb-1">Artista</div>
                                                         <div className="font-medium text-sm text-foreground">Gênesis Team</div>
