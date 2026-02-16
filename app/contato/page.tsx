@@ -95,7 +95,7 @@ export default function ContactPage() {
                         </div>
 
                         {/* Map */}
-                        <div className="w-full h-[500px] rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 border border-white/10 shadow-lg relative bg-muted lg:col-span-2">
+                        <div className="w-full h-[300px] rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 border border-white/10 shadow-lg relative bg-muted lg:col-span-2">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.126048566144!2d-46.66635332375836!3d-23.61091297876801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a08e1e7e7a7%3A0x4f2f8b4dd0c8df97!2sG%C3%AAnesis%20Tattoo!5e0!3m2!1sen!2sbr!4v1700000000000!5m2!1sen!2sbr"
                                 width="100%"
