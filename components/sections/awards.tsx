@@ -42,7 +42,7 @@ export function Awards() {
                 </div>
 
                 {/* Grid Gallery */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
                     {awards.map((award, i) => (
                         <div key={i} className="group relative aspect-[3/4] overflow-hidden rounded-sm border border-white/10 bg-white/5">
                             {/* Image */}
