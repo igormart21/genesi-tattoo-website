@@ -27,7 +27,7 @@ const fixedPortfolio = [
     { id: 3, src: "/images/pets/Pet 4.jpg", style: "Pet", title: "Pet Tattoo" },
     { id: 4, src: "/images/Rio Janeiro 3.jpg", style: "Aquarela", title: "Aquarela Autoral" },
     { id: 5, src: "/images/20231227_195552.jpg", style: "Aquarela", title: "Colorido Vibrante" },
-    { id: 6, src: "/images/pets/Pet 5.jpg", style: "Pet", title: "Retrato Realista" },
+    { id: 6, src: "/images/20251115_193224.jpg", style: "Aquarela", title: "Aquarela Exclusiva" },
 ];
 
 export function FeaturedPortfolio() {
