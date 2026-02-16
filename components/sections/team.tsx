@@ -10,7 +10,7 @@ const team = [
     {
         id: "rafael",
         name: "Rafael Oliveira",
-        role: "CEO & Tatuador Senior • Especialista em Realismo",
+        role: "CEO & Tatuador Senior • Especialista em Tatuagens Coloridas e Realistas",
         image: "/images/team/Bio-Rafael.webp",
         bio: `Rafael Oliveira, CEO da Genesis e tatuador profissional, são mais de 23 anos de experiência no mercado. Especialista nos estilos Aquarela, Colorido, Comics e Glitter, construiu uma carreira sólida e reconhecida nacionalmente.
 
