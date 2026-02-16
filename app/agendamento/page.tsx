@@ -94,12 +94,7 @@ export default function SchedulingPage() {
                                             </div>
                                         </AccordionContent>
                                     </AccordionItem>
-                                    <AccordionItem value="item-2">
-                                        <AccordionTrigger>Posso levar acompanhante?</AccordionTrigger>
-                                        <AccordionContent>
-                                            Para manter o ambiente tranquilo e focado, recomendamos vir sozinho(a). Se precisar muito, limite a 1 acompanhante.
-                                        </AccordionContent>
-                                    </AccordionItem>
+
                                     <AccordionItem value="item-3">
                                         <AccordionTrigger>Vocês cobrem tatuagens antigas (Cover-up)?</AccordionTrigger>
                                         <AccordionContent>
