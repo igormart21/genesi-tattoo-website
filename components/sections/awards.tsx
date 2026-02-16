@@ -46,13 +46,12 @@ export function Awards() {
                     {awards.map((award, i) => (
                         <div key={i} className="group relative aspect-[2/3] overflow-hidden rounded-sm border border-white/10 bg-white/5">
                             {/* Image */}
-                            <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-110">
+                            <div className="absolute inset-0 p-4 transition-transform duration-700 group-hover:scale-105">
                                 <Image
                                     src={award.src}
                                     alt={award.alt}
                                     fill
-                                    className="object-contain object-center opacity-80 group-hover:opacity-100 transition-opacity duration-500 filter grayscale group-hover:grayscale-0"
-                                    style={{ objectPosition: 'center 60%' }}
+                                    className="object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 filter grayscale group-hover:grayscale-0"
                                 />
                             </div>
 
