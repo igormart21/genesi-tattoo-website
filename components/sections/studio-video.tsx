@@ -82,9 +82,7 @@ export function StudioVideo() {
                     {/* Right Content Column */}
                     <div className="lg:col-span-4 space-y-8 lg:pl-4 text-center lg:text-left">
                         <div>
-                            <div className="text-primary font-mono text-xs tracking-[0.5em] mb-4 inline-block border-b border-primary/30 pb-1">
-                                THE SPACE
-                            </div>
+
                             <h2 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-none">
                                 O ESTÚDIO.
                             </h2>
