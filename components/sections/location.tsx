@@ -12,8 +12,8 @@ export function Location() {
                             <p className="flex items-start gap-4">
                                 <i className="bi bi-geo-alt-fill text-primary text-2xl"></i>
                                 <span>
-                                    Moema, São Paulo - SP<br />
-                                    <span className="text-sm opacity-70">Próximo ao Shopping Ibirapuera</span>
+                                    Alameda dos Maracatins, 1217<br />
+                                    <span className="text-sm opacity-70">Cj. 214 - Edifício Superia - Indianópolis, SP</span>
                                 </span>
                             </p>
                             <p className="flex items-center gap-4">
@@ -32,7 +32,7 @@ export function Location() {
                                 </Link>
                             </Button>
                             <Button asChild variant="outline" className="min-w-[150px]">
-                                <Link href="https://maps.google.com" target="_blank">
+                                <Link href="https://maps.app.goo.gl/K5W6G3kxexRKUmwnk" target="_blank">
                                     Como Chegar
                                 </Link>
                             </Button>
@@ -41,7 +41,7 @@ export function Location() {
 
                     <div className="w-full h-[400px] rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 border border-white/10 shadow-lg relative bg-muted">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.331206684717!2d-46.6644265!3d-23.5924269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a08e1e7e7a7%3A0xe53238618f020822!2sMoema%2C%20S%C3%A3o%20Paulo%20-%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1620000000000!5m2!1sen!2sbr"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.126048566144!2d-46.66635332375836!3d-23.61091297876801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a08e1e7e7a7%3A0x4f2f8b4dd0c8df97!2sG%C3%AAnesis%20Tattoo!5e0!3m2!1sen!2sbr!4v1700000000000!5m2!1sen!2sbr"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}
