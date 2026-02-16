@@ -120,8 +120,52 @@ const generatePlaceholders = (category: string, count: number, startId: number) 
     }));
 
 const petItems = generatePlaceholders("Pet", 3, 100);
-const pretoBrancoItems = generatePlaceholders("Preto e branco", 3, 200);
-const delicadasItems = generatePlaceholders("Delicadas", 3, 300);
+
+const pretoBrancoFiles = [
+    "Pb1.jpg",
+    "PB 3.jpg",
+    "PB 4.jpg",
+    "PB 5.jpg",
+    "PB 6.jpg",
+    "PB 8.jpg",
+    "PB 9.jpg",
+    "PB 10.jpg",
+    "PB 11.jpg",
+    "PB 12.jpg"
+];
+
+const pretoBrancoItems = pretoBrancoFiles.map((file, i) => ({
+    id: `pb-${i}`,
+    title: `Preto e Branco #${i + 1}`,
+    category: "Preto e branco",
+    src: `/images/preto e branco/${file}`,
+    image: `/images/preto e branco/${file}`,
+    description: "Elegância e contraste em composições monocromáticas atemporais. Cicatrização otimizada, materiais premium."
+}));
+
+const delicadasFiles = [
+    "Deli 1 .jpg",
+    "Deli 2 .jpg",
+    "Deli 3 .jpg",
+    "Deli 4.jpg",
+    "Deli 5.jpg",
+    "Deli 6 .jpg",
+    "Deli 8 .jpg",
+    "Deli 8.jpg",
+    "Deli 9 .jpg",
+    "Deli 11.jpg",
+    "Deli 12.jpg"
+];
+
+const delicadasItems = delicadasFiles.map((file, i) => ({
+    id: `dl-${i}`,
+    title: `Delicadas #${i + 1}`,
+    category: "Delicadas",
+    src: `/images/delicadas/${file}`,
+    image: `/images/delicadas/${file}`,
+    description: "Traços finos e sutis que realçam a beleza natural com leveza e delicadeza."
+}));
+
 const coberturaItems = generatePlaceholders("Cobertura de cicatriz", 3, 400);
 const coverUpItems = generatePlaceholders("Cover up", 3, 500);
 

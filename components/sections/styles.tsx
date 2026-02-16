@@ -96,12 +96,37 @@ const styles = [
         label: "Preto e Branco",
         description: "Elegância e contraste em composições monocromáticas atemporais.",
         image: "https://images.unsplash.com/photo-1590246294326-003884cb954a?q=80&w=1974&auto=format&fit=crop",
+        gallery: [
+            "/images/preto e branco/Pb1.jpg",
+            "/images/preto e branco/PB 3.jpg",
+            "/images/preto e branco/PB 4.jpg",
+            "/images/preto e branco/PB 5.jpg",
+            "/images/preto e branco/PB 6.jpg",
+            "/images/preto e branco/PB 8.jpg",
+            "/images/preto e branco/PB 9.jpg",
+            "/images/preto e branco/PB 10.jpg",
+            "/images/preto e branco/PB 11.jpg",
+            "/images/preto e branco/PB 12.jpg"
+        ]
     },
     {
         id: "delicadas",
         label: "Delicadas",
         description: "Traços finos e sutis que realçam a beleza natural com leveza.",
         image: "https://images.unsplash.com/photo-1611501275019-9b5cda994e11?q=80&w=2070&auto=format&fit=crop",
+        gallery: [
+            "/images/delicadas/Deli 1 .jpg",
+            "/images/delicadas/Deli 2 .jpg",
+            "/images/delicadas/Deli 3 .jpg",
+            "/images/delicadas/Deli 4.jpg",
+            "/images/delicadas/Deli 5.jpg",
+            "/images/delicadas/Deli 6 .jpg",
+            "/images/delicadas/Deli 8 .jpg",
+            "/images/delicadas/Deli 8.jpg",
+            "/images/delicadas/Deli 9 .jpg",
+            "/images/delicadas/Deli 11.jpg",
+            "/images/delicadas/Deli 12.jpg"
+        ]
     },
     {
         id: "cobertura",

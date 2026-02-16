@@ -51,7 +51,47 @@ export default function SchedulingPage() {
                                     <AccordionItem value="item-1">
                                         <AccordionTrigger>Como devo me preparar para a sessão?</AccordionTrigger>
                                         <AccordionContent>
-                                            Descanse bem, hidrate-se e faça uma refeição leve antes de vir. Evite bebidas alcoólicas nas 24h anteriores.
+                                            <div className="space-y-4 text-muted-foreground">
+                                                <div>
+                                                    <p className="font-semibold mb-2 text-foreground">✦ CUIDADOS ANTES DA TATUAGEM (Pré-procedimento)</p>
+                                                    <p className="font-medium mb-2">Nas 48h anteriores:</p>
+                                                    <ul className="list-disc list-inside space-y-1.5 ml-2">
+                                                        <li>Hidrate bem a pele (uso de hidratante corporal comum)</li>
+                                                        <li>Beba bastante água</li>
+                                                        <li>Tenha uma boa noite de sono</li>
+                                                        <li>Alimente-se normalmente no dia do procedimento</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <p className="font-medium mb-2">Evite:</p>
+                                                    <ul className="list-disc list-inside space-y-1.5 ml-2">
+                                                        <li>🚫 Bebidas alcoólicas (24–48h antes)</li>
+                                                        <li>🚫 Exposição solar ou bronzeamento na área</li>
+                                                        <li>🚫 Praia, piscina e sauna</li>
+                                                        <li>🚫 Uso de ácidos, peeling ou esfoliação</li>
+                                                        <li>🚫 Anti-inflamatórios e anticoagulantes sem orientação médica</li>
+                                                        <li>🚫 Café em excesso no dia (aumenta sensibilidade e sangramento)</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <p className="font-medium mb-2">Não realize a tatuagem se estiver:</p>
+                                                    <ul className="list-disc list-inside space-y-1.5 ml-2">
+                                                        <li>Com febre ou gripado</li>
+                                                        <li>Com a pele irritada, ferida ou descamando</li>
+                                                        <li>Em crise alérgica ou dermatite ativa</li>
+                                                        <li>Em uso recente de Roacutan/Isotretinoína (até 6–12 meses)</li>
+                                                        <li>Gestante ou amamentando sem liberação médica</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <p className="font-medium mb-2">No dia:</p>
+                                                    <ul className="list-disc list-inside space-y-1.5 ml-2">
+                                                        <li>✔ Venha alimentado</li>
+                                                        <li>✔ Use roupas confortáveis</li>
+                                                        <li>✔ Não venha em jejum</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </AccordionContent>
                                     </AccordionItem>
                                     <AccordionItem value="item-2">
