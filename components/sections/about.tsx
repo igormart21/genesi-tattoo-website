@@ -53,7 +53,7 @@ export function About() {
 
                         <div className="space-y-6 text-muted-foreground text-lg leading-relaxed font-light">
                             <p>
-                                Na <strong className="text-foreground font-semibold">Gênesis Tattoo Art</strong>, cada tatuagem é construída com intenção.
+                                No <strong className="text-foreground font-semibold">Estúdio Gênesis Tattoo Art</strong>, cada tatuagem é construída com intenção.
                                 Localizados no coração de Moema, transformamos ideias em arte autoral com uma estética vintage moderna inconfundível.
                             </p>
                             <p>
