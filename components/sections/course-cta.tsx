@@ -20,7 +20,7 @@ export function CourseCTA() {
                     </h2>
 
                     <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-                        Domine as técnicas de Fine Line, Blackwork e Realismo com o método Gênesis.
+                        Domine as técnicas de Aquarela, Colorido, Glitter, Círculo Cromático (online) e Mentoria Presencial com o método Gênesis.
                         Curso online completo com certificado e mentorias.
                     </p>
 
