@@ -52,6 +52,7 @@ export function Awards() {
                                     alt={award.alt}
                                     fill
                                     className="object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 filter grayscale group-hover:grayscale-0"
+                                    style={i === 2 ? { objectPosition: '42% center' } : undefined}
                                 />
                             </div>
 
