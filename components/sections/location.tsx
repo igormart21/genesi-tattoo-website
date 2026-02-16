@@ -19,8 +19,7 @@ export function Location() {
                             <p className="flex items-center gap-4">
                                 <i className="bi bi-clock-fill text-primary text-2xl"></i>
                                 <span>
-                                    Terça a Sexta: 10h às 20h<br />
-                                    Sábado: 10h às 18h
+                                    Segunda a Sábado: 10h às 20h
                                 </span>
                             </p>
                             <p className="flex items-center gap-4 text-primary font-medium">
