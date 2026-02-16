@@ -11,6 +11,7 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Badge } from "@/components/ui/badge";
+import Autoplay from "embla-carousel-autoplay";
 
 const reviews = [
     {
@@ -61,6 +62,48 @@ const reviews = [
         stars: 5,
         date: "Há 6 meses",
     },
+    {
+        name: "Juliana Rodrigues",
+        text: "Fiz minha tatuagem aquarela e o resultado superou todas as expectativas! As cores ficaram vibrantes e a cicatrização foi perfeita. Rafael é um artista de verdade!",
+        stars: 5,
+        date: "Há 3 semanas",
+    },
+    {
+        name: "André Martins",
+        text: "Atendimento excepcional do início ao fim. Tiraram todas as minhas dúvidas, o estúdio é impecável e o resultado da tattoo ficou incrível. Super recomendo!",
+        stars: 5,
+        date: "Há 1 semana",
+    },
+    {
+        name: "Camila Fernandes",
+        text: "Fiz uma tattoo delicada no pulso e estou apaixonada! Traço fino perfeito, sem borrar nada. O cuidado com os detalhes é impressionante.",
+        stars: 5,
+        date: "Há 2 dias",
+    },
+    {
+        name: "Roberto Silva",
+        text: "Já tinha outras tatuagens mas essa do Gênesis foi diferente. Trabalho limpo, profissional e com muito cuidado. Virei cliente fiel!",
+        stars: 5,
+        date: "Há 1 mês",
+    },
+    {
+        name: "Patrícia Souza",
+        text: "Melhor experiência! Desde o orçamento até a execução foi tudo perfeito. A tattoo cicatrizou super bem e as cores continuam vivas. Voltarei com certeza!",
+        stars: 5,
+        date: "Há 2 meses",
+    },
+    {
+        name: "Felipe Moreira",
+        text: "Fiz uma tattoo grande em estilo comics e ficou sensacional! O Rafael captou exatamente a vibe que eu queria. Estúdio top, equipamentos de primeira. Nota 1000!",
+        stars: 5,
+        date: "Há 3 semanas",
+    },
+    {
+        name: "Renata Cardoso",
+        text: "Simplesmente perfeito! A atenção aos detalhes, o cuidado com a higiene e o talento do tatuador são impressionantes. Minha tattoo ficou exatamente como eu sonhei. Recomendo de olhos fechados!",
+        stars: 5,
+        date: "Há 5 dias",
+    },
 ];
 
 export function Testimonials() {
@@ -77,13 +120,18 @@ export function Testimonials() {
                         align: "start",
                         loop: true,
                     }}
+                    plugins={[
+                        Autoplay({
+                            delay: 5000,
+                        }),
+                    ]}
                     className="w-full max-w-5xl mx-auto"
                 >
                     <CarouselContent>
                         {reviews.map((review, index) => (
                             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                                 <div className="p-1">
-                                    <Card className="bg-muted/30 border-white/5 h-full">
+                                    <Card className="bg-muted/30 border-white/5 hover:border-primary/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(198,161,91,0.1)] h-full">
                                         <CardContent className="flex flex-col justify-between p-6 h-[250px]">
                                             <div className="space-y-4">
                                                 <div className="flex text-primary">
