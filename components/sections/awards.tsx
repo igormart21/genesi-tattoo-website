@@ -44,7 +44,7 @@ export function Awards() {
                 {/* Grid Gallery */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     {awards.map((award, i) => (
-                        <div key={i} className="group relative aspect-[3/5] overflow-hidden rounded-sm border border-white/10 bg-white/5">
+                        <div key={i} className="group relative aspect-[9/16] overflow-hidden rounded-sm border border-white/10 bg-white/5">
                             {/* Image */}
                             <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-105">
                                 <Image
