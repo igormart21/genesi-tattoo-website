@@ -6,7 +6,6 @@ import { Badge } from "@/components/ui/badge";
 const awards = [
     { src: "/images/studio/award_1.jpeg", alt: "Tattoo Week Award 1" },
     { src: "/images/studio/award_2.jpeg", alt: "Tattoo Week Award 2" },
-    { src: "/images/studio/award_3.jpeg", alt: "Tattoo Week Award 3" },
     { src: "/images/studio/award_4.jpeg", alt: "Tattoo Week Award 4" },
 ];
 
