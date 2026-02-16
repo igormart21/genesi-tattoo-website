@@ -11,6 +11,7 @@ import { CourseCTA } from "@/components/sections/course-cta";
 import { Location } from "@/components/sections/location";
 import { CallToAction } from "@/components/sections/cta";
 import { Studio } from "@/components/sections/studio";
+import { StudioVideo } from "@/components/sections/studio-video";
 import { Awards } from "@/components/sections/awards";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <FeaturedPortfolio />
       <Team />
       <Studio />
+      <StudioVideo />
       <HowItWorks />
       <Awards />
       <Testimonials />
