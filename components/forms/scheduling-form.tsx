@@ -97,11 +97,16 @@ export function SchedulingForm() {
                                         </SelectTrigger>
                                     </FormControl>
                                     <SelectContent>
-                                        <SelectItem value="Fine Line">Fine Line</SelectItem>
+                                        <SelectItem value="Aquarela">Aquarela</SelectItem>
                                         <SelectItem value="Blackwork">Blackwork</SelectItem>
+                                        <SelectItem value="Comics">Comics</SelectItem>
+                                        <SelectItem value="Cover Up">Cover Up</SelectItem>
+                                        <SelectItem value="Escrita">Escrita</SelectItem>
+                                        <SelectItem value="Fine Line">Fine Line</SelectItem>
+                                        <SelectItem value="Glitter">Glitter</SelectItem>
+                                        <SelectItem value="Minimalista">Minimalista</SelectItem>
                                         <SelectItem value="Old School">Old School</SelectItem>
                                         <SelectItem value="Realismo">Realismo</SelectItem>
-                                        <SelectItem value="Minimalista">Minimalista</SelectItem>
                                         <SelectItem value="Outro">Outro</SelectItem>
                                     </SelectContent>
                                 </Select>
