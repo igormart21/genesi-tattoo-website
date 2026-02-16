@@ -51,7 +51,8 @@ export function Awards() {
                                     src={award.src}
                                     alt={award.alt}
                                     fill
-                                    className="object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-500 filter grayscale group-hover:grayscale-0"
+                                    className="object-contain object-center opacity-80 group-hover:opacity-100 transition-opacity duration-500 filter grayscale group-hover:grayscale-0"
+                                    style={{ objectPosition: 'center 60%' }}
                                 />
                             </div>
 
