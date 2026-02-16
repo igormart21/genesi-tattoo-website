@@ -119,7 +119,34 @@ const generatePlaceholders = (category: string, count: number, startId: number) 
         description: `Arte exclusiva na categoria ${category}.`
     }));
 
-const petItems = generatePlaceholders("Pet", 3, 100);
+const petFiles = [
+    "Pet 1.jpg",
+    "Pet 2.jpg",
+    "Pet 3.jpg",
+    "Pet 4.jpg",
+    "Pet 5.jpg",
+    "Pet 6.jpg",
+    "Pet 7.jpg",
+    "Pet 8.jpg",
+    "Pet 9.jpg",
+    "Pet 10.jpg",
+    "Pet 11.jpg",
+    "Pet 12.jpg",
+    "Pet 13.jpg",
+    "Pet 14.jpg",
+    "InCollage_20230629_181043618.jpg",
+    "InCollage_20230714_233801102.jpg",
+    "InCollage_20230714_234054088.jpg"
+];
+
+const petItems = petFiles.map((file, i) => ({
+    id: `pt-${i}`,
+    title: `Pet Tattoo #${i + 1}`,
+    category: "Pet",
+    src: `/images/pets/${file}`,
+    image: `/images/pets/${file}`,
+    description: "Homenageie seu melhor amigo com um retrato fiel ou uma arte estilizada."
+}));
 
 const pretoBrancoFiles = [
     "Pb1.jpg",

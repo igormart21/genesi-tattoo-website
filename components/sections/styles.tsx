@@ -89,7 +89,26 @@ const styles = [
         id: "pet",
         label: "Pet",
         description: "Homenageie seu melhor amigo com um retrato fiel ou uma arte estilizada.",
-        image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=2688&auto=format&fit=crop",
+        image: "/images/pets/Pet 5.jpg",
+        gallery: [
+            "/images/pets/Pet 1.jpg",
+            "/images/pets/Pet 2.jpg",
+            "/images/pets/Pet 3.jpg",
+            "/images/pets/Pet 4.jpg",
+            "/images/pets/Pet 5.jpg",
+            "/images/pets/Pet 6.jpg",
+            "/images/pets/Pet 7.jpg",
+            "/images/pets/Pet 8.jpg",
+            "/images/pets/Pet 9.jpg",
+            "/images/pets/Pet 10.jpg",
+            "/images/pets/Pet 11.jpg",
+            "/images/pets/Pet 12.jpg",
+            "/images/pets/Pet 13.jpg",
+            "/images/pets/Pet 14.jpg",
+            "/images/pets/InCollage_20230629_181043618.jpg",
+            "/images/pets/InCollage_20230714_233801102.jpg",
+            "/images/pets/InCollage_20230714_234054088.jpg"
+        ]
     },
     {
         id: "preto-branco",
