@@ -43,9 +43,9 @@ export function About() {
                                 <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
                                 <span className="text-xs font-mono text-primary tracking-widest uppercase">Sobre o Estúdio</span>
                             </div>
-                            <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground">
-                                Mais que tinta, <br />
-                                <span className="text-primary italic">uma experiência.</span>
+                            <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground leading-tight">
+                                Sua história não é comum. <br />
+                                <span className="text-primary italic">Sua tatuagem também não deveria ser.</span>
                             </h2>
                         </div>
 
