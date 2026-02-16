@@ -22,12 +22,12 @@ const portfolioItems = [1, 2, 3, 4, 5, 6].map((i) => ({
 // Unsplash source is deprecated, so I'll use a direct reliable placeholder service or static Unsplash IDs.
 // I will use fixed URLs for reliability.
 const fixedPortfolio = [
-    { id: 1, src: "/images/comics/05.jpg", style: "Comics", title: "Full Color Anime" },
-    { id: 2, src: "/images/2026-02-06 08_41_13.070-0300.jpg", style: "Aquarela", title: "Aquarela Autoral" },
-    { id: 3, src: "/images/comics/14.jpg", style: "Comics", title: "Geek / Comics" },
-    { id: 4, src: "/images/IMG-20231024-WA0039.jpg", style: "Aquarela", title: "Floral Aquarelado" },
-    { id: 5, src: "/images/comics/08.jpg", style: "Comics", title: "Personagem Geek" },
-    { id: 6, src: "/images/20250723_174957.jpg", style: "Aquarela", title: "Arte Fluida" },
+    { id: 1, src: "/images/comics/01 .jpg", style: "Comics", title: "Comics Geek" },
+    { id: 2, src: "/images/comics/03.jpg", style: "Comics", title: "Anime Art" },
+    { id: 3, src: "/images/pets/Pet 4.jpg", style: "Pet", title: "Pet Tattoo" },
+    { id: 4, src: "/images/Rio Janeiro 3.jpg", style: "Aquarela", title: "Aquarela Autoral" },
+    { id: 5, src: "/images/20231227_195552.jpg", style: "Aquarela", title: "Colorido Vibrante" },
+    { id: 6, src: "/images/pets/Pet 5.jpg", style: "Pet", title: "Retrato Realista" },
 ];
 
 export function FeaturedPortfolio() {
