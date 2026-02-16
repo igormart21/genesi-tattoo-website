@@ -244,12 +244,12 @@ export default function PortfolioPage() {
                                 </DialogTrigger>
                                 <DialogContent className="max-w-4xl w-[95vw] bg-zinc-950/95 backdrop-blur-xl border-white/10 p-0 overflow-hidden max-h-[90vh] md:h-auto flex flex-col md:block rounded-xl">
                                     <div className="grid grid-cols-1 md:grid-cols-2 h-full md:h-auto overflow-y-auto md:overflow-hidden">
-                                        <div className="relative h-64 md:h-auto min-h-[250px] md:min-h-[500px]">
+                                        <div className="relative h-[50vh] md:h-auto min-h-[300px] md:min-h-[500px] bg-black/50">
                                             <Image
                                                 src={item.src}
                                                 alt={item.title}
                                                 fill
-                                                className="object-cover"
+                                                className="object-contain"
                                             />
                                         </div>
                                         <div className="p-6 md:p-8 flex flex-col justify-center space-y-6">
