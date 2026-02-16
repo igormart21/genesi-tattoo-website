@@ -92,7 +92,7 @@ export function StudioVideo() {
                         </div>
 
                         <p className="text-muted-foreground text-lg font-light leading-relaxed">
-                            Um santuário de arte e expressão. Ambiente estéril, acolhedor e projetado para sua máxima segurança e conforto.
+                            Um santuário de arte e expressão, projetado para sua máxima segurança e conforto.
                         </p>
 
                         <div className="space-y-4 pt-4">
