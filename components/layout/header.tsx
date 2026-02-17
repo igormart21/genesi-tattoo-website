@@ -85,7 +85,7 @@ export function Header() {
                         className="bg-primary text-primary-foreground hover:bg-primary/90 font-medium tracking-wide"
                     >
                         <Link
-                            href="https://wa.me/5511951321091"
+                            href={`https://wa.me/5511951321091?text=${encodeURIComponent("Olá! Vim pelo site e gostaria de solicitar um orçamento.")}`}
                             target="_blank"
                             aria-label="Orçamento no WhatsApp"
                         >
@@ -104,7 +104,7 @@ export function Header() {
                         className="bg-primary text-primary-foreground lg:hidden"
                     >
                         <Link
-                            href="https://wa.me/5511951321091"
+                            href={`https://wa.me/5511951321091?text=${encodeURIComponent("Olá! Vim pelo site e gostaria de solicitar um orçamento.")}`}
                             target="_blank"
                             aria-label="Orçamento no WhatsApp"
                         >
