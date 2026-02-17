@@ -108,6 +108,10 @@ export function StudioVideo() {
                                 <div className="w-1 h-1 bg-primary rounded-full"></div>
                                 <span>Wi-Fi & Lounge</span>
                             </div>
+                            <div className="flex items-center gap-3 text-sm text-white/50 justify-center lg:justify-start">
+                                <div className="w-1 h-1 bg-primary rounded-full"></div>
+                                <span>Estacionamento com Valet (cortesia)</span>
+                            </div>
                         </div>
 
                         {/* Mobile Technical Info (Hidden on Desktop) */}
