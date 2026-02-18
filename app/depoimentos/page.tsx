@@ -18,6 +18,7 @@ import Image from "next/image";
 
 // Real Google My Business Review Screenshots
 const reviewImages = [
+    "/images/depoimentos/PHOTO-2026-02-18-11-28-07.jpg",
     "/images/depoimentos/WhatsApp Image 2026-02-16 at 10.10.35.jpeg",
     "/images/depoimentos/WhatsApp Image 2026-02-16 at 10.10.36.jpeg",
     "/images/depoimentos/WhatsApp Image 2026-02-16 at 10.10.38.jpeg",

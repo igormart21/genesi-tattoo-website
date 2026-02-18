@@ -78,8 +78,8 @@ export function Footer() {
                             </li>
                             <li className="flex items-center gap-3">
                                 <i className="bi bi-envelope text-primary"></i>
-                                <a href="mailto:contato@genesistattoo.com.br" className="hover:text-primary transition-colors font-mono tracking-wide">
-                                    contato@genesistattoo.com.br
+                                <a href="mailto:raffa.tattoo@gmail.com" className="hover:text-primary transition-colors font-mono tracking-wide">
+                                    raffa.tattoo@gmail.com
                                 </a>
                             </li>
                         </ul>

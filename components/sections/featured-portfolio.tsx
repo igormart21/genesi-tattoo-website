@@ -26,7 +26,7 @@ const fixedPortfolio = [
     { id: 2, src: "/images/comics/03.jpg", style: "Comics", title: "Anime Art" },
     { id: 3, src: "/images/pets/Pet 4.jpg", style: "Pet", title: "Pet Tattoo" },
     { id: 4, src: "/images/Rio Janeiro 3.jpg", style: "Aquarela", title: "Aquarela Autoral" },
-    { id: 5, src: "/images/20231227_195552.jpg", style: "Aquarela", title: "Colorido Vibrante" },
+    { id: 5, src: "/images/1000062113.jpg", style: "Aquarela", title: "Colorido Vibrante" },
     { id: 6, src: "/images/20251115_193224.jpg", style: "Aquarela", title: "Aquarela Exclusiva" },
 ];
 
@@ -101,9 +101,11 @@ export function FeaturedPortfolio() {
                                             <Badge className="w-fit bg-primary/20 text-primary hover:bg-primary/20">{item.style}</Badge>
                                             <DialogTitle className="text-3xl font-serif pt-4">{item.title}</DialogTitle>
                                             <DialogDescription className="text-lg">
-                                                {item.style === "Comics"
-                                                    ? "Reprodução fiel com cores vibrantes e acabamento impecável."
-                                                    : "Trabalho desenvolvido com técnica refinada e estética única."}
+                                                {item.id === 5
+                                                    ? "Trabalho autoral desenvolvido com técnica refinada e estética única."
+                                                    : item.style === "Comics"
+                                                        ? "Reprodução fiel com cores vibrantes e acabamento impecável."
+                                                        : "Trabalho desenvolvido com técnica refinada e estética única."}
                                                 <br />Cada detalhe pensado para garantir a melhor cicatrização e durabilidade.
                                             </DialogDescription>
                                         </DialogHeader>

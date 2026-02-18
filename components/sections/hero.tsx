@@ -11,7 +11,7 @@ export function Hero() {
                 <div className="absolute inset-0 bg-black/40 z-10" />
                 <div
                     className="w-full h-full bg-cover bg-center opacity-60 mix-blend-overlay"
-                    style={{ backgroundImage: "url('https://images.unsplash.com/photo-1598371839696-5c5bbce65074?q=80&w=2070&auto=format&fit=crop')" }}
+                    style={{ backgroundImage: "url('/images/studio/20260210_164313.jpg')" }}
                 ></div>
                 {/* Noise overlay */}
                 <div className="absolute inset-0 bg-noise opacity-30 z-20 pointer-events-none mix-blend-soft-light"></div>

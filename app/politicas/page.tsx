@@ -76,7 +76,7 @@ export default function PoliticasPage() {
                         <section className="space-y-4">
                             <h2 className="text-2xl font-serif font-bold text-foreground">7. Contato</h2>
                             <p>
-                                Para dúvidas sobre esta política, entre em contato pelo e-mail: <a href="mailto:contato@genesistattoo.com.br" className="text-primary hover:underline">contato@genesistattoo.com.br</a>
+                                Para dúvidas sobre esta política, entre em contato pelo e-mail: <a href="mailto:raffa.tattoo@gmail.com" className="text-primary hover:underline">raffa.tattoo@gmail.com</a>
                             </p>
                         </section>
                     </div>

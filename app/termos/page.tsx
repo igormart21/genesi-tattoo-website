@@ -72,7 +72,7 @@ export default function TermosPage() {
                         <section className="space-y-4">
                             <h2 className="text-2xl font-serif font-bold text-foreground">8. Contato</h2>
                             <p>
-                                Dúvidas? Entre em contato pelo e-mail: <a href="mailto:contato@genesistattoo.com.br" className="text-primary hover:underline">contato@genesistattoo.com.br</a>
+                                Dúvidas? Entre em contato pelo e-mail: <a href="mailto:raffa.tattoo@gmail.com" className="text-primary hover:underline">raffa.tattoo@gmail.com</a>
                             </p>
                         </section>
                     </div>

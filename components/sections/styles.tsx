@@ -91,6 +91,7 @@ const styles = [
         description: "Homenageie seu melhor amigo com um retrato fiel ou uma arte estilizada.",
         image: "/images/pets/Pet 5.jpg",
         gallery: [
+            "/images/pets/IMG-20250925-WA0075.jpg",
             "/images/pets/Pet 1.jpg",
             "/images/pets/Pet 2.jpg",
             "/images/pets/Pet 3.jpg",
@@ -156,7 +157,7 @@ const styles = [
             "/images/cobertura de cicatriz/FB_IMG_1771413704576.jpg",
             "/images/cobertura de cicatriz/FB_IMG_1771414048860.jpg",
             "/images/cobertura de cicatriz/InCollage_20260217_193616144.jpg",
-            "/images/cobertura de cicatriz/InCollage_20260217_193739688.jpg",
+            "/images/cobertura de cicatriz/InCollage_20260218_164513859.jpg",
             "/images/cobertura de cicatriz/InCollage_20260217_194202017.jpg",
             "/images/cobertura de cicatriz/SaveClip.App_563279142_18535591009014372_2296656215453028895_n.jpg",
             "/images/cobertura de cicatriz/SaveClip.App_564334853_18535591018014372_1398082041535650288_n.jpg",

@@ -111,36 +111,70 @@ export default function ContactPage() {
                             </div>
                         </div>
 
-                        {/* Quick Contact Form */}
-                        <div className="bg-muted/30 p-8 rounded-xl border border-white/5 h-fit">
-                            <h3 className="text-2xl font-serif font-bold mb-6">Mensagem Rápida</h3>
-                            <form className="space-y-4" onSubmit={(e) => {
-                                e.preventDefault();
-                                // Mock submit
-                                alert("Mensagem enviada! Retornaremos em breve.");
-                            }}>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <div className="space-y-2">
-                                        <label className="text-sm font-medium">Nome</label>
-                                        <Input placeholder="Seu nome" className="bg-background/50 border-white/10" />
+                        <div className="flex flex-col gap-6">
+                            <div className="relative overflow-hidden rounded-xl border border-primary/20 bg-background/50 p-8 shadow-2xl backdrop-blur-sm group">
+                                {/* Hero Design Elements */}
+                                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 opacity-50 pointer-events-none" />
+                                <div className="absolute inset-0 bg-noise opacity-20 pointer-events-none mix-blend-soft-light" />
+                                <div className="absolute -top-1 -left-1 w-3 h-3 border-t border-l border-primary/30 z-10" />
+                                <div className="absolute -top-1 -right-1 w-3 h-3 border-t border-r border-primary/30 z-10" />
+                                <div className="absolute -bottom-1 -left-1 w-3 h-3 border-b border-l border-primary/30 z-10" />
+                                <div className="absolute -bottom-1 -right-1 w-3 h-3 border-b border-r border-primary/30 z-10" />
+
+                                <h3 className="relative z-10 text-2xl font-serif font-bold mb-6 text-foreground drop-shadow-sm">Mensagem Rápida</h3>
+                                <form className="relative z-10 space-y-4" onSubmit={(e) => {
+                                    e.preventDefault();
+                                    // Mock submit
+                                    alert("Mensagem enviada! Retornaremos em breve.");
+                                }}>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div className="space-y-2">
+                                            <label className="text-sm font-medium">Nome</label>
+                                            <Input placeholder="Seu nome" className="bg-background/40 border-primary/20 focus:border-primary/50" />
+                                        </div>
+                                        <div className="space-y-2">
+                                            <label className="text-sm font-medium">Email (Opcional)</label>
+                                            <Input placeholder="seu@email.com" className="bg-background/40 border-primary/20 focus:border-primary/50" />
+                                        </div>
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-sm font-medium">Email (Opcional)</label>
-                                        <Input placeholder="seu@email.com" className="bg-background/50 border-white/10" />
+                                        <label className="text-sm font-medium">Assunto</label>
+                                        <Input placeholder="Dúvida, Parceria, Outros" className="bg-background/40 border-primary/20 focus:border-primary/50" />
+                                    </div>
+                                    <div className="space-y-2">
+                                        <label className="text-sm font-medium">Mensagem</label>
+                                        <Textarea placeholder="Como podemos ajudar?" className="bg-background/40 border-primary/20 min-h-[120px] focus:border-primary/50" />
+                                    </div>
+                                    <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all shadow-[0_0_15px_rgba(198,161,91,0.15)] hover:shadow-[0_0_25px_rgba(198,161,91,0.25)]">
+                                        Enviar Mensagem
+                                    </Button>
+                                </form>
+                            </div>
+
+                            {/* Building Image - Hero Style */}
+                            <div className="w-full max-w-[50%] mx-auto rounded-2xl overflow-hidden border border-white/10 shadow-lg relative bg-background group">
+                                <div className="relative w-full">
+                                    <img
+                                        src="/images/team/Superia.jpg"
+                                        alt="Edifício Superia"
+                                        className="w-full h-auto block transition-transform duration-700 group-hover:scale-105"
+                                    />
+
+                                    {/* Overlays */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent z-10" />
+                                    <div className="absolute inset-0 bg-black/10 z-10" />
+                                    {/* Noise overlay */}
+                                    <div className="absolute inset-0 bg-noise opacity-30 z-20 pointer-events-none mix-blend-soft-light"></div>
+
+                                    {/* Content overlay */}
+                                    <div className="absolute bottom-0 left-0 right-0 p-6 z-30">
+                                        <div className="border-l-2 border-primary pl-4">
+                                            <h4 className="text-white font-serif font-bold text-xl">Edifício Superia</h4>
+                                            <p className="text-white/70 text-sm">Nosso espaço</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="space-y-2">
-                                    <label className="text-sm font-medium">Assunto</label>
-                                    <Input placeholder="Dúvida, Parceria, Outros" className="bg-background/50 border-white/10" />
-                                </div>
-                                <div className="space-y-2">
-                                    <label className="text-sm font-medium">Mensagem</label>
-                                    <Textarea placeholder="Como podemos ajudar?" className="bg-background/50 border-white/10 min-h-[120px]" />
-                                </div>
-                                <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                                    Enviar Mensagem
-                                </Button>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>

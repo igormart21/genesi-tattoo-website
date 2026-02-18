@@ -21,7 +21,7 @@ const aquarelaFiles = [
     "20221202_193610.jpg",
     "20230418_022204.jpg",
     "20230813_113733.jpg",
-    "20231227_195552.jpg",
+    "1000062113.jpg",
     "20240714_223219.jpg",
     "20240824_183248.jpg",
     "20241115_223557.jpg",
@@ -120,6 +120,7 @@ const generatePlaceholders = (category: string, count: number, startId: number) 
     }));
 
 const petFiles = [
+    "IMG-20250925-WA0075.jpg",
     "Pet 1.jpg",
     "Pet 2.jpg",
     "Pet 3.jpg",
@@ -197,7 +198,7 @@ const coberturaFiles = [
     "FB_IMG_1771413704576.jpg",
     "FB_IMG_1771414048860.jpg",
     "InCollage_20260217_193616144.jpg",
-    "InCollage_20260217_193739688.jpg",
+    "InCollage_20260218_164513859.jpg",
     "InCollage_20260217_194202017.jpg",
     "SaveClip.App_563279142_18535591009014372_2296656215453028895_n.jpg",
     "SaveClip.App_564334853_18535591018014372_1398082041535650288_n.jpg",
@@ -341,7 +342,7 @@ export default function PortfolioPage() {
                                                 <div className="grid grid-cols-1 gap-3">
                                                     <div className="p-3 rounded border border-white/10 bg-white/5">
                                                         <div className="text-[10px] uppercase tracking-widest text-muted-foreground mb-1">Artista</div>
-                                                        <div className="font-medium text-sm text-foreground">Gênesis Team</div>
+                                                        <div className="font-medium text-sm text-foreground">Artista Rafael Oliveira</div>
                                                     </div>
                                                 </div>
 
