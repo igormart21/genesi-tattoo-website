@@ -193,8 +193,54 @@ const delicadasItems = delicadasFiles.map((file, i) => ({
     description: "Traços finos e sutis que realçam a beleza natural com leveza e delicadeza."
 }));
 
-const coberturaItems = generatePlaceholders("Cobertura de cicatriz", 3, 400);
-const coverUpItems = generatePlaceholders("Cover up", 3, 500);
+const coberturaFiles = [
+    "FB_IMG_1771413704576.jpg",
+    "FB_IMG_1771414048860.jpg",
+    "InCollage_20260217_193616144.jpg",
+    "InCollage_20260217_193739688.jpg",
+    "InCollage_20260217_194202017.jpg",
+    "SaveClip.App_563279142_18535591009014372_2296656215453028895_n.jpg",
+    "SaveClip.App_564334853_18535591018014372_1398082041535650288_n.jpg",
+    "SaveClip.App_566036303_18535590973014372_3242002517998529309_n.jpg"
+];
+
+const coberturaItems = coberturaFiles.map((file, i) => ({
+    id: `co-${i}`,
+    title: `Cobertura #${i + 1}`,
+    category: "Cobertura de cicatriz",
+    src: `/images/cobertura de cicatriz/${file}`,
+    image: `/images/cobertura de cicatriz/${file}`,
+    description: "Dominamos diversas técnicas para materializar sua visão com maestria. Transformação de marcas em arte com projetos especializados."
+}));
+
+
+const coverUpFiles = [
+    "FB_IMG_1771413846293.jpg",
+    "FB_IMG_1771413881832.jpg",
+    "InCollage_20260217_192838488.jpg",
+    "InCollage_20260217_193042550.jpg",
+    "InCollage_20260217_193229593.jpg",
+    "InCollage_20260217_193339728.jpg",
+    "InCollage_20260217_200111660.jpg",
+    "InCollage_20260217_200303790.jpg",
+    "InCollage_20260217_201201438.jpg",
+    "InCollage_20260217_201413875.jpg",
+    "InCollage_20260218_085335416.jpg",
+    "InCollage_20260218_085650781.jpg",
+    "InCollage_20260218_085915880.jpg",
+    "InCollage_20260218_093810861.jpg",
+    "InCollage_20260218_094239206.jpg",
+    "InCollage_20260218_094913302.jpg"
+];
+
+const coverUpItems = coverUpFiles.map((file, i) => ({
+    id: `cu-${i}`,
+    title: `Cover Up #${i + 1}`,
+    category: "Cover up",
+    src: `/images/cover Up/${file}`,
+    image: `/images/cover Up/${file}`,
+    description: "Renove ou cubra tatuagens antigas com uma nova arte exclusiva. Especialidade em transformar antigas marcas em novas obras de arte."
+}));
 
 const portfolioItems = [
     ...aquarelaItems,

@@ -152,12 +152,40 @@ const styles = [
         label: "Cobertura de Cicatriz",
         description: "Transforme marcas em arte com projetos especializados para cobertura.",
         image: "https://images.unsplash.com/photo-1562962245-e2dca1c045b4?q=80&w=1976&auto=format&fit=crop",
+        gallery: [
+            "/images/cobertura de cicatriz/FB_IMG_1771413704576.jpg",
+            "/images/cobertura de cicatriz/FB_IMG_1771414048860.jpg",
+            "/images/cobertura de cicatriz/InCollage_20260217_193616144.jpg",
+            "/images/cobertura de cicatriz/InCollage_20260217_193739688.jpg",
+            "/images/cobertura de cicatriz/InCollage_20260217_194202017.jpg",
+            "/images/cobertura de cicatriz/SaveClip.App_563279142_18535591009014372_2296656215453028895_n.jpg",
+            "/images/cobertura de cicatriz/SaveClip.App_564334853_18535591018014372_1398082041535650288_n.jpg",
+            "/images/cobertura de cicatriz/SaveClip.App_566036303_18535590973014372_3242002517998529309_n.jpg"
+        ]
     },
     {
         id: "coverup",
         label: "Cover Up",
         description: "Renove ou cubra tatuagens antigas com uma nova arte exclusiva.",
         image: "https://images.unsplash.com/photo-1606709772863-78c633a682ac?q=80&w=2670&auto=format&fit=crop",
+        gallery: [
+            "/images/cover Up/FB_IMG_1771413846293.jpg",
+            "/images/cover Up/FB_IMG_1771413881832.jpg",
+            "/images/cover Up/InCollage_20260217_192838488.jpg",
+            "/images/cover Up/InCollage_20260217_193042550.jpg",
+            "/images/cover Up/InCollage_20260217_193229593.jpg",
+            "/images/cover Up/InCollage_20260217_193339728.jpg",
+            "/images/cover Up/InCollage_20260217_200111660.jpg",
+            "/images/cover Up/InCollage_20260217_200303790.jpg",
+            "/images/cover Up/InCollage_20260217_201201438.jpg",
+            "/images/cover Up/InCollage_20260217_201413875.jpg",
+            "/images/cover Up/InCollage_20260218_085335416.jpg",
+            "/images/cover Up/InCollage_20260218_085650781.jpg",
+            "/images/cover Up/InCollage_20260218_085915880.jpg",
+            "/images/cover Up/InCollage_20260218_093810861.jpg",
+            "/images/cover Up/InCollage_20260218_094239206.jpg",
+            "/images/cover Up/InCollage_20260218_094913302.jpg"
+        ]
     }
 ];
 
