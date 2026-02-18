@@ -35,7 +35,7 @@ const styles = [
     {
         id: "comics",
         label: "Comics",
-        description: "Inspirado em HQs, animes e cultura pop. Cores sólidas, traços marcantes e muita personalidade.",
+        description: "Inspirado em HQs, animes e cultura pop. Reproduções fiéis com cores sólidas e traços marcantes.",
         image: "https://images.unsplash.com/photo-1568515045052-5853e527d21c?q=80&w=1974&auto=format&fit=crop",
         gallery: [
             "/images/comics/01 .jpg",
@@ -232,12 +232,12 @@ export function Styles() {
                                                     <CarouselContent>
                                                         {style.gallery.map((img, index) => (
                                                             <CarouselItem key={index} className="relative h-64 md:h-[400px]">
-                                                                <div className="w-full h-full relative">
+                                                                <div className="w-full h-full relative bg-black/40">
                                                                     <Image
                                                                         src={img}
                                                                         alt={`${style.label} ${index + 1}`}
                                                                         fill
-                                                                        className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                                                                        className="object-contain grayscale group-hover:grayscale-0 transition-all duration-500"
                                                                     />
                                                                     <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
                                                                 </div>
@@ -255,7 +255,7 @@ export function Styles() {
                                                         src={style.image}
                                                         alt={style.label}
                                                         fill
-                                                        className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                                                        className="object-contain grayscale group-hover:grayscale-0 transition-all duration-500"
                                                     />
                                                     <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
                                                 </>

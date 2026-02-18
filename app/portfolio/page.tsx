@@ -96,7 +96,7 @@ const comicsItems = comicsFiles.map((file, i) => ({
     category: "Comics",
     src: `/images/comics/${file}`,
     image: `/images/comics/${file}`,
-    description: "Arte inspirada no universo geek, animes e quadrinhos, com cores vivas e traços fiéis."
+    description: "Arte inspirada no universo geek, animes e quadrinhos. Reproduções fiéis e homenagens aos seus personagens favoritos."
 }));
 
 const glitterItems = glitterFiles.map((file, i) => ({

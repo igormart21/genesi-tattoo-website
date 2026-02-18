@@ -101,24 +101,26 @@ export function FeaturedPortfolio() {
                                             <Badge className="w-fit bg-primary/20 text-primary hover:bg-primary/20">{item.style}</Badge>
                                             <DialogTitle className="text-3xl font-serif pt-4">{item.title}</DialogTitle>
                                             <DialogDescription className="text-lg">
-                                                Trabalho autoral desenvolvido exclusivamente para o cliente.
-                                                <br />Cada detalhe pensado para harmonizar com a anatomia do corpo.
+                                                {item.style === "Comics"
+                                                    ? "Reprodução fiel com cores vibrantes e acabamento impecável."
+                                                    : "Trabalho desenvolvido com técnica refinada e estética única."}
+                                                <br />Cada detalhe pensado para garantir a melhor cicatrização e durabilidade.
                                             </DialogDescription>
                                         </DialogHeader>
 
                                         <div className="space-y-4 pt-4">
                                             <div className="flex gap-4 text-sm text-muted-foreground">
-                                                <div className="flex items-center gap-1"><i className="bi bi-clock"></i> 4-6 horas</div>
-                                                <div className="flex items-center gap-1"><i className="bi bi-person"></i> Artista Sênior</div>
+                                                {/* Info removed as requested */}
                                             </div>
                                             <Separator className="bg-white/10" />
-                                            <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+                                            <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90 h-auto py-3 whitespace-normal">
                                                 <Link
                                                     href={`https://wa.me/5511951321091?text=${encodeURIComponent(`Olá! Vi o trabalho "${item.title}" no site e gostaria de um orçamento similar.`)}`}
                                                     target="_blank"
+                                                    className="flex items-center justify-center text-center leading-tight sm:px-2"
                                                 >
-                                                    <i className="bi bi-whatsapp mr-2"></i>
-                                                    Quero um orçamento dessa ideia
+                                                    <i className="bi bi-whatsapp mr-2 shrink-0"></i>
+                                                    <span className="break-words">Quero um orçamento dessa ideia</span>
                                                 </Link>
                                             </Button>
                                         </div>
