@@ -2,9 +2,15 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/genes1757/genesis-tattoo-web/
-    - /bin/cp -R * $DEPLOYPATH
-    - /bin/cp -R .next $DEPLOYPATH 2>/dev/null; true
-    - cd $DEPLOYPATH
-    - source /home/genes1757/nodevenv/genesis-tattoo-web/18/bin/activate
-    - npm install --production
-    - npm run build
+    - /bin/cp -R app $DEPLOYPATH
+    - /bin/cp -R components $DEPLOYPATH
+    - /bin/cp -R lib $DEPLOYPATH
+    - /bin/cp -R public $DEPLOYPATH
+    - /bin/cp server.js $DEPLOYPATH
+    - /bin/cp package.json $DEPLOYPATH
+    - /bin/cp package-lock.json $DEPLOYPATH
+    - /bin/cp next.config.ts $DEPLOYPATH
+    - /bin/cp tsconfig.json $DEPLOYPATH
+    - /bin/cp postcss.config.mjs $DEPLOYPATH
+    - /bin/cp eslint.config.mjs $DEPLOYPATH
+    - /bin/cp components.json $DEPLOYPATH
