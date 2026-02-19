@@ -1,14 +1,4 @@
 ---
 deployment:
   tasks:
-    - /bin/cp -R app /home/genes1757/genesis-tattoo-web/
-    - /bin/cp -R components /home/genes1757/genesis-tattoo-web/
-    - /bin/cp -R lib /home/genes1757/genesis-tattoo-web/
-    - /bin/cp -R public /home/genes1757/genesis-tattoo-web/
     - /bin/cp server.js /home/genes1757/genesis-tattoo-web/
-    - /bin/cp package.json /home/genes1757/genesis-tattoo-web/
-    - /bin/cp package-lock.json /home/genes1757/genesis-tattoo-web/
-    - /bin/cp next.config.ts /home/genes1757/genesis-tattoo-web/
-    - /bin/cp tsconfig.json /home/genes1757/genesis-tattoo-web/
-    - /bin/cp postcss.config.mjs /home/genes1757/genesis-tattoo-web/
-    - /bin/cp components.json /home/genes1757/genesis-tattoo-web/
