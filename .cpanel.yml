@@ -1,16 +1,14 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/genes1757/genesis-tattoo-web/
-    - /bin/cp -R app $DEPLOYPATH
-    - /bin/cp -R components $DEPLOYPATH
-    - /bin/cp -R lib $DEPLOYPATH
-    - /bin/cp -R public $DEPLOYPATH
-    - /bin/cp server.js $DEPLOYPATH
-    - /bin/cp package.json $DEPLOYPATH
-    - /bin/cp package-lock.json $DEPLOYPATH
-    - /bin/cp next.config.ts $DEPLOYPATH
-    - /bin/cp tsconfig.json $DEPLOYPATH
-    - /bin/cp postcss.config.mjs $DEPLOYPATH
-    - /bin/cp eslint.config.mjs $DEPLOYPATH
-    - /bin/cp components.json $DEPLOYPATH
+    - /bin/cp -R app /home/genes1757/genesis-tattoo-web/
+    - /bin/cp -R components /home/genes1757/genesis-tattoo-web/
+    - /bin/cp -R lib /home/genes1757/genesis-tattoo-web/
+    - /bin/cp -R public /home/genes1757/genesis-tattoo-web/
+    - /bin/cp server.js /home/genes1757/genesis-tattoo-web/
+    - /bin/cp package.json /home/genes1757/genesis-tattoo-web/
+    - /bin/cp package-lock.json /home/genes1757/genesis-tattoo-web/
+    - /bin/cp next.config.ts /home/genes1757/genesis-tattoo-web/
+    - /bin/cp tsconfig.json /home/genes1757/genesis-tattoo-web/
+    - /bin/cp postcss.config.mjs /home/genes1757/genesis-tattoo-web/
+    - /bin/cp components.json /home/genes1757/genesis-tattoo-web/
