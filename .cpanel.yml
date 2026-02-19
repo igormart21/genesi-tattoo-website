@@ -1,0 +1,10 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/genes1757/genesis-tattoo-web/
+    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -R .next $DEPLOYPATH 2>/dev/null; true
+    - cd $DEPLOYPATH
+    - source /home/genes1757/nodevenv/genesis-tattoo-web/18/bin/activate
+    - npm install --production
+    - npm run build
