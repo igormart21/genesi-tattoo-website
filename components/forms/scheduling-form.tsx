@@ -25,6 +25,7 @@ const formSchema = z.object({
     placement: z.string().min(2, { message: "Informe o local do corpo." }),
     size: z.string().min(1, { message: "Selecione um tamanho aproximado." }),
     description: z.string().optional(),
+    reference: z.any().optional(),
 });
 
 export function SchedulingForm() {
@@ -37,6 +38,7 @@ export function SchedulingForm() {
             placement: "",
             size: "",
             description: "",
+            reference: undefined,
         },
     });
 
@@ -47,7 +49,8 @@ export function SchedulingForm() {
             `*Estilo:* ${values.style}%0A` +
             `*Local:* ${values.placement}%0A` +
             `*Tamanho:* ${values.size}%0A` +
-            `*Observações:* ${values.description || "Nenhuma"}`;
+            `*Observações:* ${values.description || "Nenhuma"}%0A` +
+            `*Possui Referência:* ${values.reference && values.reference.length > 0 ? "Sim (Anexar após enviar)" : "Não"}`;
 
         window.open(`https://wa.me/5511951321091?text=${message}`, "_blank");
     }
@@ -166,6 +169,35 @@ export function SchedulingForm() {
                                     className="resize-none bg-background/50 border-white/10 min-h-[100px]"
                                     {...field}
                                 />
+                            </FormControl>
+                            <FormMessage />
+                        </FormItem>
+                    )}
+                />
+
+                <FormField
+                    control={form.control}
+                    name="reference"
+                    render={({ field: { value, onChange, ...fieldProps } }) => (
+                        <FormItem>
+                            <FormLabel>Foto de Referência (Opcional)</FormLabel>
+                            <FormControl>
+                                <div className="space-y-3">
+                                    <Input
+                                        type="file"
+                                        accept="image/*"
+                                        className="bg-background/50 border-white/10 cursor-pointer file:text-primary"
+                                        onChange={(event) => onChange(event.target.files)}
+                                        {...fieldProps}
+                                    />
+                                    <p className="text-sm text-primary/80 italic font-medium leading-relaxed">
+                                        <i className="bi bi-info-circle mr-2"></i>
+                                        Sim, fazemos coberturas. Envie uma foto da tatuagem atual no campo de referência para avaliarmos a possibilidade.
+                                    </p>
+                                    <FormDescription className="text-xs text-muted-foreground">
+                                        Como o envio é via WhatsApp, lembre-se de anexar a foto na conversa após clicar em enviar.
+                                    </FormDescription>
+                                </div>
                             </FormControl>
                             <FormMessage />
                         </FormItem>

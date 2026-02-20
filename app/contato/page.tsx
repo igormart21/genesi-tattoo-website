@@ -152,7 +152,7 @@ export default function ContactPage() {
                             </div>
 
                             {/* Building Image - Hero Style */}
-                            <div className="w-full max-w-[50%] mx-auto rounded-2xl overflow-hidden border border-white/10 shadow-lg relative bg-background group">
+                            <div className="w-full lg:max-w-md mx-auto rounded-2xl overflow-hidden border border-white/10 shadow-lg relative bg-background group">
                                 <div className="relative w-full">
                                     <img
                                         src="/images/team/Superia.jpg"
