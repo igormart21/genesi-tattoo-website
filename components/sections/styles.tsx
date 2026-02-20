@@ -159,6 +159,7 @@ const styles = [
             "/images/cobertura de cicatriz/InCollage_20260217_193616144.jpg",
             "/images/cobertura de cicatriz/InCollage_20260218_164513859.jpg",
             "/images/cobertura de cicatriz/InCollage_20260217_194202017.jpg",
+            "/images/cobertura de cicatriz/InCollage_20260217_193458355.jpg",
             "/images/cobertura de cicatriz/SaveClip.App_563279142_18535591009014372_2296656215453028895_n.jpg",
             "/images/cobertura de cicatriz/SaveClip.App_564334853_18535591018014372_1398082041535650288_n.jpg",
             "/images/cobertura de cicatriz/SaveClip.App_566036303_18535590973014372_3242002517998529309_n.jpg"
