@@ -180,7 +180,7 @@ export function SchedulingForm() {
                     name="reference"
                     render={({ field: { value, onChange, ...fieldProps } }) => (
                         <FormItem>
-                            <FormLabel>Foto de Referência (Opcional)</FormLabel>
+                            <FormLabel>Sua inspiração ou cobertura</FormLabel>
                             <FormControl>
                                 <div className="space-y-3">
                                     <Input
@@ -192,11 +192,8 @@ export function SchedulingForm() {
                                     />
                                     <p className="text-sm text-primary/80 italic font-medium leading-relaxed">
                                         <i className="bi bi-info-circle mr-2"></i>
-                                        Sim, fazemos coberturas. Envie uma foto da tatuagem atual no campo de referência para avaliarmos a possibilidade.
+                                        Anexe aqui suas referências visuais ou, caso deseje uma cobertura, uma foto nítida da tatuagem atual para avaliação técnica.
                                     </p>
-                                    <FormDescription className="text-xs text-muted-foreground">
-                                        Como o envio é via WhatsApp, lembre-se de anexar a foto na conversa após clicar em enviar.
-                                    </FormDescription>
                                 </div>
                             </FormControl>
                             <FormMessage />
