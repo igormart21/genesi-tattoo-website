@@ -14,13 +14,10 @@ export default function LinksPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent z-10" />
                 <div className="absolute inset-0 bg-black/60 z-10" />
 
-                {/* Image Background - Anchored to bottom, pushed down and scaled */}
-                <Image
-                    src="/images/studio/20260210_193923.jpg"
-                    alt="Background"
-                    fill
-                    className="opacity-50 mix-blend-overlay object-cover object-[center_bottom] scale-[1.5] translate-y-[15%]"
-                    priority
+                {/* Image Background - Oversized and physically pulled up to crop ceiling */}
+                <div
+                    className="absolute w-full h-[150vh] -top-[40vh] left-0 bg-cover bg-bottom opacity-50 mix-blend-overlay"
+                    style={{ backgroundImage: "url('/images/studio/20260210_193923.jpg')" }}
                 />
 
                 {/* Noise overlay */}
