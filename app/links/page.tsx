@@ -14,7 +14,7 @@ export default function LinksPage() {
                 <div className="absolute inset-0 bg-black/60 z-10" />
                 <div
                     className="w-full h-full bg-cover bg-center opacity-60 mix-blend-overlay"
-                    style={{ backgroundImage: "url('/images/studio/20260210_164313.jpg')" }}
+                    style={{ backgroundImage: "url('/images/studio/20260210_193923.jpg')" }}
                 ></div>
                 {/* Noise overlay */}
                 <div className="absolute inset-0 bg-noise opacity-30 z-20 pointer-events-none mix-blend-soft-light"></div>
