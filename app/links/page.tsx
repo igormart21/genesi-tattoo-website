@@ -17,7 +17,7 @@ export default function LinksPage() {
                     src="/images/studio/20260210_193923.jpg"
                     alt="Background"
                     fill
-                    className="opacity-50 mix-blend-overlay object-cover object-[center_200px] scale-[1.2]"
+                    className="opacity-50 mix-blend-overlay object-cover scale-[1.7] translate-y-[30%]"
                     priority
                 />
                 {/* Noise overlay */}
