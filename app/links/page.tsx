@@ -45,8 +45,8 @@ export default function LinksPage() {
                         </div>
 
                         <div className="space-y-2">
-                            <h1 className="text-3xl font-serif font-bold text-white tracking-widest uppercase italic">
-                                Gênesis<span className="text-primary text-4xl leading-none">.</span>
+                            <h1 className="text-2xl sm:text-3xl font-serif font-bold text-white tracking-widest uppercase italic">
+                                Gênesis Tattoo Art<span className="text-primary text-3xl sm:text-4xl leading-none">.</span>
                             </h1>
                             <div className="flex items-center justify-center gap-3">
                                 <div className="h-px w-8 bg-primary/40"></div>
