@@ -10,17 +10,19 @@ export default function LinksPage() {
     return (
         <main className="min-h-screen relative flex items-center justify-center overflow-hidden bg-background">
             {/* Background with Image and Overlay */}
-            <div className="absolute inset-0 z-0 bg-black overflow-hidden">
+            <div className="absolute inset-0 z-0 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent z-10" />
                 <div className="absolute inset-0 bg-black/60 z-10" />
 
                 {/* Image Background */}
-                <Image
-                    src="/images/studio/20260210_193923.jpg"
-                    alt="Background"
-                    fill
-                    className="opacity-50 mix-blend-overlay object-cover scale-[1.5] translate-y-[20%] origin-bottom"
-                    priority
+                <div
+                    className="w-full h-full bg-cover opacity-60 mix-blend-overlay"
+                    style={{
+                        backgroundImage: "url('/images/studio/20260210_193923.jpg')",
+                        backgroundPosition: "center bottom",
+                        transform: "scale(1.4) translateY(15%)",
+                        transformOrigin: "bottom center"
+                    }}
                 />
 
                 {/* Noise overlay */}
