@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -12,10 +13,13 @@ export default function LinksPage() {
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent z-10" />
                 <div className="absolute inset-0 bg-black/60 z-10" />
-                <div
-                    className="w-full h-full bg-cover [background-position:center_100%] opacity-60 mix-blend-overlay"
-                    style={{ backgroundImage: "url('/images/studio/20260210_193923.jpg')" }}
-                ></div>
+                <Image
+                    src="/images/studio/20260210_193923.jpg"
+                    alt="Background"
+                    fill
+                    className="opacity-50 mix-blend-overlay object-cover object-[center_90%]"
+                    priority
+                />
                 {/* Noise overlay */}
                 <div className="absolute inset-0 bg-noise opacity-30 z-20 pointer-events-none mix-blend-soft-light"></div>
             </div>
