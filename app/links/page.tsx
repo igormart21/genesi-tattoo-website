@@ -8,19 +8,52 @@ import { Badge } from "@/components/ui/badge";
 export default function LinksPage() {
     return (
         <main className="min-h-screen relative flex items-center justify-center overflow-hidden bg-background">
-            {/* Background with Image and Overlay */}
+            {/* Background Carousel Setup equivalent (using static image for now per user request, but adding exactly the same overlays) */}
             <div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent z-10" />
-                <div className="absolute inset-0 bg-black/60 z-10" />
                 <div
-                    className="w-full h-full bg-cover bg-center opacity-60 mix-blend-overlay"
+                    className="absolute inset-0 bg-cover bg-center transition-transform duration-[10000ms] ease-linear scale-110"
                     style={{ backgroundImage: "url('/images/studio/20260210_193923.jpg')" }}
-                ></div>
-                {/* Noise overlay */}
-                <div className="absolute inset-0 bg-noise opacity-30 z-20 pointer-events-none mix-blend-soft-light"></div>
+                />
+                {/* Dark Overlay per slide */}
+                <div className="absolute inset-0 bg-black/50" />
             </div>
 
-            <div className="container relative z-30 px-4 py-12 flex flex-col items-center justify-center min-h-[100dvh]">
+            {/* Global Overlays exactly like studio.tsx */}
+            <div className="absolute inset-0 pointer-events-none z-10">
+                {/* Dither Pattern */}
+                <div className="absolute inset-0 opacity-20 dither-pattern" />
+
+                {/* Scanlines/Grid */}
+                <div className="absolute inset-0 bg-[linear-gradient(rgba(18,16,11,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] z-20 bg-[length:100%_2px,3px_100%] pointer-events-none" />
+
+                {/* Vignette */}
+                <div className="absolute inset-0 bg-radial-gradient-vignette opacity-60" />
+            </div>
+
+            {/* Corner Borders exactly like studio.tsx */}
+            <div className="absolute top-8 left-8 w-10 h-10 md:w-16 md:h-16 border-t-2 border-l-2 border-white/10 pointer-events-none z-20" />
+            <div className="absolute top-8 right-8 w-10 h-10 md:w-16 md:h-16 border-t-2 border-r-2 border-white/10 pointer-events-none z-20" />
+            <div className="absolute bottom-8 left-8 w-10 h-10 md:w-16 md:h-16 border-b-2 border-l-2 border-white/10 pointer-events-none z-20" />
+            <div className="absolute bottom-8 right-8 w-10 h-10 md:w-16 md:h-16 border-b-2 border-r-2 border-white/10 pointer-events-none z-20" />
+
+            {/* Header Tech Markers from studio.tsx */}
+            <div className="absolute top-10 left-6 md:left-12 right-6 md:right-12 z-30 flex justify-between items-start pointer-events-none">
+                <div className="flex flex-col gap-1">
+                    <div className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+                        <span className="text-primary/80 font-mono text-[10px] tracking-widest">LIVE FEED</span>
+                    </div>
+                    <span className="text-white/40 font-mono text-[10px]">CAM_01</span>
+                </div>
+
+                <div className="flex flex-col items-end lg:flex-row lg:items-center gap-1 lg:gap-8 text-[10px] font-mono text-white/40">
+                    <span>ISO 800</span>
+                    <span className="hidden lg:inline">f/1.8</span>
+                    <span className="hidden lg:inline">1/120</span>
+                </div>
+            </div>
+
+            <div className="container relative z-30 px-4 py-20 flex flex-col items-center justify-center min-h-[100dvh]">
                 <div className="w-full max-w-md space-y-10 animate-fade-in-up">
                     {/* Header Profile */}
                     <div className="text-center space-y-6">
@@ -106,6 +139,9 @@ export default function LinksPage() {
                         repeating-linear-gradient(0deg, transparent 0px, transparent 1px, #C6A15B 1px, #C6A15B 2px),
                         repeating-linear-gradient(90deg, transparent 0px, transparent 1px, #C6A15B 1px, #C6A15B 2px);
                     background-size: 3px 3px;
+                }
+                .bg-radial-gradient-vignette {
+                    background-image: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.8) 100%);
                 }
             `}</style>
         </main>
