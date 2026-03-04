@@ -30,20 +30,50 @@ export default function LinksPage() {
             </div>
 
             <div className="container relative z-30 px-4 py-12 flex flex-col items-center justify-center min-h-[100dvh]">
-                <div className="w-full max-w-md space-y-10 animate-fade-in-up">
+
+                {/* Global Overlays (Camera aesthetic) */}
+                <div className="absolute inset-0 pointer-events-none z-0">
+                    {/* Scanlines/Grid */}
+                    <div className="absolute inset-0 bg-[linear-gradient(rgba(18,16,11,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-[length:100%_2px,3px_100%] pointer-events-none" />
+                    {/* Vignette */}
+                    <div className="absolute inset-0 bg-radial-gradient-vignette opacity-60 pointer-events-none" />
+                </div>
+
+                {/* Corner Borders */}
+                <div className="absolute top-4 left-4 w-12 h-12 border-t-2 border-l-2 border-white/10 pointer-events-none z-20" />
+                <div className="absolute top-4 right-4 w-12 h-12 border-t-2 border-r-2 border-white/10 pointer-events-none z-20" />
+                <div className="absolute bottom-4 left-4 w-12 h-12 border-b-2 border-l-2 border-white/10 pointer-events-none z-20" />
+                <div className="absolute bottom-4 right-4 w-12 h-12 border-b-2 border-r-2 border-white/10 pointer-events-none z-20" />
+
+                {/* Header Tech Markers */}
+                <div className="absolute top-4 left-0 right-0 px-8 flex justify-between items-start z-20 pointer-events-none">
+                    <div className="flex flex-col gap-1">
+                        <div className="flex items-center gap-2">
+                            <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+                            <span className="text-primary/80 font-mono text-[10px] sm:text-xs tracking-widest">LIVE FEED</span>
+                        </div>
+                        <span className="text-white/40 font-mono text-[9px] sm:text-[10px]">CAM_01</span>
+                    </div>
+
+                    <div className="flex flex-col sm:flex-row gap-1 sm:gap-4 text-[9px] sm:text-[10px] font-mono text-white/40 text-right sm:text-left">
+                        <span>ISO 800</span>
+                        <span>f/1.8</span>
+                        <span>1/120</span>
+                    </div>
+                </div>
+
+                <div className="w-full max-w-md space-y-10 animate-fade-in-up relative z-30">
                     {/* Header Profile */}
-                    <div className="text-center space-y-6">
+                    <div className="text-center space-y-6 pt-12 sm:pt-4">
                         {/* Premium Brand Icon Block */}
                         <div className="relative inline-block">
                             <div className="w-28 h-28 mx-auto rounded-full overflow-hidden border border-primary/30 flex items-center justify-center bg-black/40 backdrop-blur-sm shadow-[0_0_30px_rgba(198,161,91,0.15)] group transition-all duration-500 hover:border-primary/60">
                                 {/* Dithered accent circle */}
                                 <div className="absolute inset-0 dither-pattern opacity-10 rounded-full group-hover:opacity-20 transition-opacity"></div>
-
                                 <span className="text-5xl font-serif font-bold text-primary italic tracking-tighter drop-shadow-[0_0_10px_rgba(198,161,91,0.5)]">
                                     G.
                                 </span>
                             </div>
-
                             {/* Technical notations around the circle */}
                             <div className="absolute -top-2 -right-6 text-[8px] font-mono text-primary/60 tracking-widest uppercase">
                                 EST. 2026
@@ -53,16 +83,21 @@ export default function LinksPage() {
                             </div>
                         </div>
 
-                        <div className="space-y-2">
-                            <h1 className="text-2xl sm:text-3xl font-serif font-bold text-white tracking-widest uppercase italic">
-                                Gênesis Tattoo Art<span className="text-primary text-3xl sm:text-4xl leading-none">.</span>
+                        <div className="space-y-4">
+                            {/* Tech Title Label */}
+                            <div className="flex items-center justify-center gap-3 opacity-80">
+                                <span className="text-primary text-[10px] font-mono tracking-widest">002</span>
+                                <div className="w-8 h-px bg-primary" />
+                                <span className="text-primary text-[10px] font-mono tracking-widest">THE SPACE</span>
+                            </div>
+
+                            <h1 className="text-2xl sm:text-3xl font-serif font-bold text-white tracking-widest uppercase italic leading-none">
+                                O ESTÚDIO<span className="text-primary text-3xl sm:text-4xl leading-none">.</span>
                             </h1>
-                            <div className="flex items-center justify-center gap-3">
-                                <div className="h-px w-8 bg-primary/40"></div>
-                                <p className="text-muted-foreground font-light text-sm tracking-widest uppercase">
-                                    Arte na pele. História na alma.
+                            <div className="flex items-center justify-center relative">
+                                <p className="text-muted-foreground font-light text-xs sm:text-sm tracking-widest leading-relaxed border-l border-primary/30 pl-4 py-1 max-w-[280px] bg-black/20 backdrop-blur-sm">
+                                    Um santuário de arte e expressão. Ambiente estéril, acolhedor e projetado para sua máxima segurança e conforto.
                                 </p>
-                                <div className="h-px w-8 bg-primary/40"></div>
                             </div>
                         </div>
                     </div>
