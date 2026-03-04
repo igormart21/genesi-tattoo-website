@@ -11,12 +11,9 @@ export default function LinksPage() {
         <main className="min-h-screen relative flex items-center justify-center overflow-hidden bg-background">
             {/* Background with Image and Overlay */}
             <div className="absolute inset-0 z-0 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent z-10" />
-                <div className="absolute inset-0 bg-black/60 z-10" />
-
                 {/* Image Background */}
                 <div
-                    className="w-full h-full bg-cover opacity-60 mix-blend-overlay"
+                    className="w-full h-full bg-cover opacity-80"
                     style={{
                         backgroundImage: "url('/images/studio/20260210_193923.jpg')",
                         backgroundPosition: "center bottom",
