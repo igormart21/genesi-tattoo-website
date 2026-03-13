@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -42,6 +43,19 @@ export default function RootLayout({
             {children}
             <Toaster />
           </TooltipProvider>
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=AW-305954220"
+            strategy="afterInteractive"
+          />
+          <Script id="google-tag" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'AW-305954220');
+            `}
+          </Script>
         </ThemeProvider>
       </body>
     </html>
