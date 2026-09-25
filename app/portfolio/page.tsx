@@ -16,8 +16,8 @@ import { Separator } from "@/components/ui/separator";
 const categories = ["Todos", "Aquarela", "Comics", "Glitter", "Pet", "Preto e branco", "Delicadas", "Cobertura de cicatriz", "Cover up"];
 
 const aquarelaFiles = [
-    "2026-09-21 14_59_08.958-0300.jpg",
-    "2026-09-21 15_30_52.205-0300.jpg",
+    "aquarela-nov-1.jpg",
+    "aquarela-nov-2.jpg",
     "2026-02-06 08_41_13.070-0300.jpg",
     "20220926_152540.jpg",
     "20221202_193610.jpg",
@@ -63,7 +63,7 @@ const comicsFiles = [
 ];
 
 const glitterFiles = [
-    "20260731_125659.jpg",
+    "glitter-nov-1.jpg",
     "glitter-1.jpg",
     "glitter-2.jpg",
     "glitter-3.jpg",
@@ -153,14 +153,14 @@ const petItems = petFiles.map((file, i) => ({
 }));
 
 const pretoBrancoFiles = [
-    "2026-07-08 13_57_12.478-0300.jpg",
-    "20260616_232211.jpg",
-    "20260628_182223.jpg",
-    "20260726_184434.jpg",
-    "20260728_214703.jpg",
-    "20260803_210343.jpg",
-    "20260816_193347.jpg",
-    "20260820_220227.jpg",
+    "pb-nov-1.jpg",
+    "pb-nov-2.jpg",
+    "pb-nov-3.jpg",
+    "pb-nov-4.jpg",
+    "pb-nov-5.jpg",
+    "pb-nov-6.jpg",
+    "pb-nov-7.jpg",
+    "pb-nov-8.jpg",
     "Pb1.jpg",
     "PB 3.jpg",
     "PB 4.jpg",
@@ -228,11 +228,11 @@ const coberturaItems = coberturaFiles.map((file, i) => ({
 
 
 const coverUpFiles = [
-    "InCollage_20260921_162301473.jpg",
-    "InCollage_20260921_162506102.jpg",
-    "InCollage_20260921_162657498.jpg",
-    "InCollage_20260921_163117688.jpg",
-    "InCollage_20260921_163206229.jpg",
+    "coverup-nov-1.jpg",
+    "coverup-nov-2.jpg",
+    "coverup-nov-3.jpg",
+    "coverup-nov-4.jpg",
+    "coverup-nov-5.jpg",
     "FB_IMG_1771413846293.jpg",
     "FB_IMG_1771413881832.jpg",
     "InCollage_20260217_192838488.jpg",
