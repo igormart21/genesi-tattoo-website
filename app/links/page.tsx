@@ -160,6 +160,36 @@ export default function LinksPage() {
                                 <i className="bi bi-whatsapp mr-2 text-green-500"></i> Falar no WhatsApp
                             </Link>
                         </Button>
+
+                        {/* Bloco de Parceria - Remoção de Tatuagem a Laser (Dra. Alessandra Rocha) */}
+                        <div className="relative group rounded-2xl border border-primary/40 bg-black/70 backdrop-blur-md p-6 space-y-4 text-left transition-all duration-300 hover:border-primary/80 shadow-[0_0_25px_rgba(198,161,91,0.12)]">
+                            {/* Header do Card com Badge e Profissional */}
+                            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-3">
+                                <Badge variant="outline" className="border-primary/60 text-primary text-[11px] uppercase tracking-widest font-mono bg-primary/10 px-3 py-1 w-fit">
+                                    <i className="bi bi-handshake mr-1.5"></i> Parceria Especializada
+                                </Badge>
+                                <span className="text-xs font-mono text-white/80 flex items-center gap-1.5">
+                                    <i className="bi bi-patch-check-fill text-primary"></i> Dra. Alessandra Rocha
+                                </span>
+                            </div>
+
+                            {/* Conteúdo Principal */}
+                            <div className="space-y-2">
+                                <h3 className="font-serif font-bold text-xl text-white tracking-wide">
+                                    Remoção de Tatuagem a Laser
+                                </h3>
+                                <p className="text-sm text-muted-foreground leading-relaxed">
+                                    Quer remover ou clarear uma tatuagem para um novo projeto (cover-up)? Atendimento especializado de remoção e clareamento a laser em parceria com a Dra. Alessandra Rocha.
+                                </p>
+                            </div>
+
+                            {/* Botão de Agendamento */}
+                            <Button asChild size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 h-14 text-base font-semibold shadow-md transition-all hover:scale-[1.01]">
+                                <Link href="https://maapp.com.br/alessandarocha?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener noreferrer">
+                                    <i className="bi bi-calendar-check mr-2"></i> Agendar Avaliação para Remoção
+                                </Link>
+                            </Button>
+                        </div>
                     </div>
 
                     {/* Footer */}
