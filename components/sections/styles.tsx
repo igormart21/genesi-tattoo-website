@@ -20,16 +20,16 @@ const styles = [
         id: "aquarela",
         label: "Aquarela",
         description: "Cores vibrantes e fluidas, imitando a técnica de pintura em aquarela com manchas e transições suaves.",
-        image: "https://images.unsplash.com/photo-1598371839696-5c5bb6eb4327?q=80&w=2070&auto=format&fit=crop",
+        image: "/images/aquarela-nov-1.jpg",
         gallery: [
+            "/images/aquarela-nov-1.jpg",
+            "/images/aquarela-nov-2.jpg",
             "/images/aquarela-1.jpg",
             "/images/aquarela-renata.jpg",
-            "/images/2026-02-06 08_41_13.070-0300.jpg",
             "/images/20240714_223219.jpg",
             "/images/20241117_191445.jpg",
             "/images/20250723_174957.jpg",
-            "/images/IMG-20231024-WA0039.jpg",
-            "/images/Rio Janeiro 3.jpg"
+            "/images/IMG-20231024-WA0039.jpg"
         ]
     },
     {
@@ -63,8 +63,9 @@ const styles = [
         id: "glitter",
         label: "Glitter",
         description: "Técnica que simula o efeito de brilho e glitter, trazendo um toque mágico e único para a tatuagem.",
-        image: "https://images.unsplash.com/photo-1531168551408-5dc2c3771804?q=80&w=1974&auto=format&fit=crop", // Placeholder
+        image: "/images/glitter/glitter-nov-1.jpg",
         gallery: [
+            "/images/glitter/glitter-nov-1.jpg",
             "/images/glitter/glitter-1.jpg",
             "/images/glitter/glitter-2.jpg",
             "/images/glitter/glitter-3.jpg",
@@ -115,8 +116,16 @@ const styles = [
         id: "preto-branco",
         label: "Preto e Branco",
         description: "Elegância e contraste em composições monocromáticas atemporais.",
-        image: "https://images.unsplash.com/photo-1590246294326-003884cb954a?q=80&w=1974&auto=format&fit=crop",
+        image: "/images/preto e branco/pb-nov-1.jpg",
         gallery: [
+            "/images/preto e branco/pb-nov-1.jpg",
+            "/images/preto e branco/pb-nov-2.jpg",
+            "/images/preto e branco/pb-nov-3.jpg",
+            "/images/preto e branco/pb-nov-4.jpg",
+            "/images/preto e branco/pb-nov-5.jpg",
+            "/images/preto e branco/pb-nov-6.jpg",
+            "/images/preto e branco/pb-nov-7.jpg",
+            "/images/preto e branco/pb-nov-8.jpg",
             "/images/preto e branco/Pb1.jpg",
             "/images/preto e branco/PB 3.jpg",
             "/images/preto e branco/PB 4.jpg",
@@ -169,8 +178,13 @@ const styles = [
         id: "coverup",
         label: "Cover Up",
         description: "Renove ou cubra tatuagens antigas com uma nova arte exclusiva.",
-        image: "https://images.unsplash.com/photo-1606709772863-78c633a682ac?q=80&w=2670&auto=format&fit=crop",
+        image: "/images/cover Up/coverup-nov-1.jpg",
         gallery: [
+            "/images/cover Up/coverup-nov-1.jpg",
+            "/images/cover Up/coverup-nov-2.jpg",
+            "/images/cover Up/coverup-nov-3.jpg",
+            "/images/cover Up/coverup-nov-4.jpg",
+            "/images/cover Up/coverup-nov-5.jpg",
             "/images/cover Up/FB_IMG_1771413846293.jpg",
             "/images/cover Up/FB_IMG_1771413881832.jpg",
             "/images/cover Up/InCollage_20260217_192838488.jpg",
